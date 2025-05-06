@@ -3,35 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Employer Support Training</title>
+  <title>Employer/Profile Changes Training</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      background: #f4f4f4;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
     }
     header {
       background: #2b7a78;
       color: white;
-      padding: 1rem;
+      padding: 2rem 1rem;
       text-align: center;
     }
     .tabs {
       display: flex;
+      justify-content: space-evenly;
       flex-wrap: wrap;
       background: #def2f1;
-      justify-content: center;
     }
     .tabs button {
+      flex: 1;
       background: transparent;
       border: none;
       padding: 1rem;
       cursor: pointer;
       font-weight: bold;
-      transition: background 0.3s;
     }
-    .tabs button:hover, .tabs button.active {
+    .tabs button.active, .tabs button:hover {
       background: #3aafa9;
       color: white;
     }
@@ -49,30 +49,26 @@
       border-radius: 5px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
-    iframe {
-      width: 100%;
-      height: 500px;
-      border: none;
-      margin-top: 1rem;
+    input[type="checkbox"] {
+      transform: scale(1.3);
+      accent-color: #2b7a78;
+      margin-right: 10px;
     }
-  input[type="checkbox"] {
-  transform: scale(1.3);
-  accent-color: #2b7a78;
-  margin-right: 10px;
-}
-
-input[type="checkbox"]:checked + span {
-  text-decoration: line-through;
-  color: #999;
-}
-</style>
+    input[type="checkbox"]:checked + span {
+      text-decoration: line-through;
+      color: #999;
+    }
+    a {
+      color: #2b7a78;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Employer Support Training</h1>
-    <p>6-Week Onboarding Program</p>
+    <h1>Employer/Profile Changes Training</h1>
+    <p>Interactive 6-week onboarding checklist</p>
   </header>
-
   <div class="tabs">
     <button class="tab-btn active" data-index="0">Week 1</button>
     <button class="tab-btn" data-index="1">Week 2</button>
@@ -82,618 +78,256 @@ input[type="checkbox"]:checked + span {
     <button class="tab-btn" data-index="5">Week 6</button>
   </div>
 
-  <div class="week active">
-    <h2>Week 1: Foundations & Compliance (Employer Path)</h2>
-    <details>
-      <summary>Day 1: Welcome, Mission & Tool Access</summary>
-      <ul>
-<li><label><input type="checkbox"><span>Complete Lessonly: Security Overview</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Privacy Training</span></label></li>
-<li><label><input type="checkbox"><span>Set up tools (Slack, Gmail, Salesforce)</span></label></li>
-<li><label><input type="checkbox"><span>Walk through Employer-view in Salesforce</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Salesforce Basics</span></label></li>
-<li><label><input type="checkbox"><span>Review Account Mgmt, Content Issues, Flagged Reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Legal Requests</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Anonymous Content</span></label></li>
-<li><label><input type="checkbox"><span>Review escalation flow in Guru</span></label></li>
-<li><label><input type="checkbox"><span>Discuss privacy and review risks</span></label></li>
-<li><label><input type="checkbox"><span>Review Guru Cards: Employer Access, Review Management</span></label></li>
-<li><label><input type="checkbox"><span>Intro to Bug Process + Site Feedback tagging</span></label></li>
-<li><label><input type="checkbox"><span>Walkthrough: responding to flagged reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete knowledge check quiz</span></label></li>
-<li><label><input type="checkbox"><span>Shadow 1 live case with commentary</span></label></li>
-<li><label><input type="checkbox"><span>1:1 with TL to discuss progress + Week 2 preview</span></label></li>
-</ul>
-    </details>
-    <details>
-      <summary>Day 2: Salesforce Navigation + Case Types</summary>
-      <ul>
-<li><label><input type="checkbox"><span>Complete Lessonly: Security Overview</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Privacy Training</span></label></li>
-<li><label><input type="checkbox"><span>Set up tools (Slack, Gmail, Salesforce)</span></label></li>
-<li><label><input type="checkbox"><span>Walk through Employer-view in Salesforce</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Salesforce Basics</span></label></li>
-<li><label><input type="checkbox"><span>Review Account Mgmt, Content Issues, Flagged Reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Legal Requests</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Anonymous Content</span></label></li>
-<li><label><input type="checkbox"><span>Review escalation flow in Guru</span></label></li>
-<li><label><input type="checkbox"><span>Discuss privacy and review risks</span></label></li>
-<li><label><input type="checkbox"><span>Review Guru Cards: Employer Access, Review Management</span></label></li>
-<li><label><input type="checkbox"><span>Intro to Bug Process + Site Feedback tagging</span></label></li>
-<li><label><input type="checkbox"><span>Walkthrough: responding to flagged reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete knowledge check quiz</span></label></li>
-<li><label><input type="checkbox"><span>Shadow 1 live case with commentary</span></label></li>
-<li><label><input type="checkbox"><span>1:1 with TL to discuss progress + Week 2 preview</span></label></li>
-</ul>
-    </details>
-    <details>
-      <summary>Day 3: Compliance Overview & T&S Escalations</summary>
-      <ul>
-<li><label><input type="checkbox"><span>Complete Lessonly: Security Overview</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Privacy Training</span></label></li>
-<li><label><input type="checkbox"><span>Set up tools (Slack, Gmail, Salesforce)</span></label></li>
-<li><label><input type="checkbox"><span>Walk through Employer-view in Salesforce</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Salesforce Basics</span></label></li>
-<li><label><input type="checkbox"><span>Review Account Mgmt, Content Issues, Flagged Reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Legal Requests</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Anonymous Content</span></label></li>
-<li><label><input type="checkbox"><span>Review escalation flow in Guru</span></label></li>
-<li><label><input type="checkbox"><span>Discuss privacy and review risks</span></label></li>
-<li><label><input type="checkbox"><span>Review Guru Cards: Employer Access, Review Management</span></label></li>
-<li><label><input type="checkbox"><span>Intro to Bug Process + Site Feedback tagging</span></label></li>
-<li><label><input type="checkbox"><span>Walkthrough: responding to flagged reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete knowledge check quiz</span></label></li>
-<li><label><input type="checkbox"><span>Shadow 1 live case with commentary</span></label></li>
-<li><label><input type="checkbox"><span>1:1 with TL to discuss progress + Week 2 preview</span></label></li>
-</ul>
-    </details>
-    <details>
-      <summary>Day 4: Introduction to Employer Tools</summary>
-      <ul>
-<li><label><input type="checkbox"><span>Complete Lessonly: Security Overview</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Privacy Training</span></label></li>
-<li><label><input type="checkbox"><span>Set up tools (Slack, Gmail, Salesforce)</span></label></li>
-<li><label><input type="checkbox"><span>Walk through Employer-view in Salesforce</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Salesforce Basics</span></label></li>
-<li><label><input type="checkbox"><span>Review Account Mgmt, Content Issues, Flagged Reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Legal Requests</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Anonymous Content</span></label></li>
-<li><label><input type="checkbox"><span>Review escalation flow in Guru</span></label></li>
-<li><label><input type="checkbox"><span>Discuss privacy and review risks</span></label></li>
-<li><label><input type="checkbox"><span>Review Guru Cards: Employer Access, Review Management</span></label></li>
-<li><label><input type="checkbox"><span>Intro to Bug Process + Site Feedback tagging</span></label></li>
-<li><label><input type="checkbox"><span>Walkthrough: responding to flagged reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete knowledge check quiz</span></label></li>
-<li><label><input type="checkbox"><span>Shadow 1 live case with commentary</span></label></li>
-<li><label><input type="checkbox"><span>1:1 with TL to discuss progress + Week 2 preview</span></label></li>
-</ul>
-    </details>
-    <details>
-      <summary>Day 5: Wrap-Up & Review</summary>
-      <ul>
-<li><label><input type="checkbox"><span>Complete Lessonly: Security Overview</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Privacy Training</span></label></li>
-<li><label><input type="checkbox"><span>Set up tools (Slack, Gmail, Salesforce)</span></label></li>
-<li><label><input type="checkbox"><span>Walk through Employer-view in Salesforce</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Salesforce Basics</span></label></li>
-<li><label><input type="checkbox"><span>Review Account Mgmt, Content Issues, Flagged Reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Legal Requests</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Anonymous Content</span></label></li>
-<li><label><input type="checkbox"><span>Review escalation flow in Guru</span></label></li>
-<li><label><input type="checkbox"><span>Discuss privacy and review risks</span></label></li>
-<li><label><input type="checkbox"><span>Review Guru Cards: Employer Access, Review Management</span></label></li>
-<li><label><input type="checkbox"><span>Intro to Bug Process + Site Feedback tagging</span></label></li>
-<li><label><input type="checkbox"><span>Walkthrough: responding to flagged reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete knowledge check quiz</span></label></li>
-<li><label><input type="checkbox"><span>Shadow 1 live case with commentary</span></label></li>
-<li><label><input type="checkbox"><span>1:1 with TL to discuss progress + Week 2 preview</span></label></li>
-</ul>
-    </details>
-    
-  </div>
-
-  <div class="week">
-    <h2>Week 2: Core Case Types & Tools</h2>
-    <details>
-      <summary>Day 1: Review Management Cases</summary>
-<ul>
-<li><label><input type="checkbox"><span>Review flagged reviews and moderation policies</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Review Escalation</span></label></li>
-</ul>
-    </details>
-    <details>
-      <summary>Day 2: Account Access + Login Issues</summary>
-<ul>
-<li><label><input type="checkbox"><span>Shadow login/access related tickets</span></label></li>
-<li><label><input type="checkbox"><span>Hands-on reset tools practice</span></label></li>
-</ul>
-    </details>
-    <details>
-      <summary>Day 3: QA Calibration</summary>
-<ul>
-<li><label><input type="checkbox"><span>Learn QA rubric and scoring system</span></label></li>
-<li><label><input type="checkbox"><span>Score 3 sample cases</span></label></li>
-</ul>
-    </details>
-    <details>
-      <summary>Day 4: Handling Multi-Team Escalations</summary>
-<ul>
-<li><label><input type="checkbox"><span>Partner with Jobseeker team</span></label></li>
-<li><label><input type="checkbox"><span>Review internal notes, handoffs, and tags</span></label></li>
-</ul>
-    </details>
-    <details>
-      <summary>Day 5: Form Review & Tools Mastery</summary>
-<ul>
-<li><label><input type="checkbox"><span>Review tracker and Guru references</span></label></li>
-<li><label><input type="checkbox"><span>Complete end-of-week feedback quiz</span></label></li>
-</ul>
-    </details>
-    
-  </div>
-
-  <div class="week">
-    <h2>Week 3: Intermediate Case Work & QA Focus</h2>
-    <details>
-      <summary>Day 1: Queue Ownership Practice</summary>
-      <ul>
-<li><label><input type="checkbox"><span>Complete Lessonly: Security Overview</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Privacy Training</span></label></li>
-<li><label><input type="checkbox"><span>Set up tools (Slack, Gmail, Salesforce)</span></label></li>
-<li><label><input type="checkbox"><span>Walk through Employer-view in Salesforce</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Salesforce Basics</span></label></li>
-<li><label><input type="checkbox"><span>Review Account Mgmt, Content Issues, Flagged Reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Legal Requests</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Anonymous Content</span></label></li>
-<li><label><input type="checkbox"><span>Review escalation flow in Guru</span></label></li>
-<li><label><input type="checkbox"><span>Discuss privacy and review risks</span></label></li>
-<li><label><input type="checkbox"><span>Review Guru Cards: Employer Access, Review Management</span></label></li>
-<li><label><input type="checkbox"><span>Intro to Bug Process + Site Feedback tagging</span></label></li>
-<li><label><input type="checkbox"><span>Walkthrough: responding to flagged reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete knowledge check quiz</span></label></li>
-<li><label><input type="checkbox"><span>Shadow 1 live case with commentary</span></label></li>
-<li><label><input type="checkbox"><span>1:1 with TL to discuss progress + Week 2 preview</span></label></li>
-</ul>
-    </details>
-    <details>
-      <summary>Day 2: Deep Dive - Flagged Reviews</summary>
-      <ul>
-<li><label><input type="checkbox"><span>Complete Lessonly: Security Overview</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Privacy Training</span></label></li>
-<li><label><input type="checkbox"><span>Set up tools (Slack, Gmail, Salesforce)</span></label></li>
-<li><label><input type="checkbox"><span>Walk through Employer-view in Salesforce</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Salesforce Basics</span></label></li>
-<li><label><input type="checkbox"><span>Review Account Mgmt, Content Issues, Flagged Reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Legal Requests</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Anonymous Content</span></label></li>
-<li><label><input type="checkbox"><span>Review escalation flow in Guru</span></label></li>
-<li><label><input type="checkbox"><span>Discuss privacy and review risks</span></label></li>
-<li><label><input type="checkbox"><span>Review Guru Cards: Employer Access, Review Management</span></label></li>
-<li><label><input type="checkbox"><span>Intro to Bug Process + Site Feedback tagging</span></label></li>
-<li><label><input type="checkbox"><span>Walkthrough: responding to flagged reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete knowledge check quiz</span></label></li>
-<li><label><input type="checkbox"><span>Shadow 1 live case with commentary</span></label></li>
-<li><label><input type="checkbox"><span>1:1 with TL to discuss progress + Week 2 preview</span></label></li>
-</ul>
-    </details>
-    <details>
-      <summary>Day 3: Bug Reporting</summary>
-      <ul>
-<li><label><input type="checkbox"><span>Complete Lessonly: Security Overview</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Privacy Training</span></label></li>
-<li><label><input type="checkbox"><span>Set up tools (Slack, Gmail, Salesforce)</span></label></li>
-<li><label><input type="checkbox"><span>Walk through Employer-view in Salesforce</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Salesforce Basics</span></label></li>
-<li><label><input type="checkbox"><span>Review Account Mgmt, Content Issues, Flagged Reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Legal Requests</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Anonymous Content</span></label></li>
-<li><label><input type="checkbox"><span>Review escalation flow in Guru</span></label></li>
-<li><label><input type="checkbox"><span>Discuss privacy and review risks</span></label></li>
-<li><label><input type="checkbox"><span>Review Guru Cards: Employer Access, Review Management</span></label></li>
-<li><label><input type="checkbox"><span>Intro to Bug Process + Site Feedback tagging</span></label></li>
-<li><label><input type="checkbox"><span>Walkthrough: responding to flagged reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete knowledge check quiz</span></label></li>
-<li><label><input type="checkbox"><span>Shadow 1 live case with commentary</span></label></li>
-<li><label><input type="checkbox"><span>1:1 with TL to discuss progress + Week 2 preview</span></label></li>
-</ul>
-    </details>
-    <details>
-      <summary>Day 4: Peer QA Roundtable</summary>
-      <ul>
-<li><label><input type="checkbox"><span>Complete Lessonly: Security Overview</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Privacy Training</span></label></li>
-<li><label><input type="checkbox"><span>Set up tools (Slack, Gmail, Salesforce)</span></label></li>
-<li><label><input type="checkbox"><span>Walk through Employer-view in Salesforce</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Salesforce Basics</span></label></li>
-<li><label><input type="checkbox"><span>Review Account Mgmt, Content Issues, Flagged Reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Legal Requests</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Anonymous Content</span></label></li>
-<li><label><input type="checkbox"><span>Review escalation flow in Guru</span></label></li>
-<li><label><input type="checkbox"><span>Discuss privacy and review risks</span></label></li>
-<li><label><input type="checkbox"><span>Review Guru Cards: Employer Access, Review Management</span></label></li>
-<li><label><input type="checkbox"><span>Intro to Bug Process + Site Feedback tagging</span></label></li>
-<li><label><input type="checkbox"><span>Walkthrough: responding to flagged reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete knowledge check quiz</span></label></li>
-<li><label><input type="checkbox"><span>Shadow 1 live case with commentary</span></label></li>
-<li><label><input type="checkbox"><span>1:1 with TL to discuss progress + Week 2 preview</span></label></li>
-</ul>
-    </details>
-    <details>
-      <summary>Day 5: Self-Eval & Progress Planning</summary>
-      <ul>
-<li><label><input type="checkbox"><span>Complete Lessonly: Security Overview</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Privacy Training</span></label></li>
-<li><label><input type="checkbox"><span>Set up tools (Slack, Gmail, Salesforce)</span></label></li>
-<li><label><input type="checkbox"><span>Walk through Employer-view in Salesforce</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Salesforce Basics</span></label></li>
-<li><label><input type="checkbox"><span>Review Account Mgmt, Content Issues, Flagged Reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Legal Requests</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Anonymous Content</span></label></li>
-<li><label><input type="checkbox"><span>Review escalation flow in Guru</span></label></li>
-<li><label><input type="checkbox"><span>Discuss privacy and review risks</span></label></li>
-<li><label><input type="checkbox"><span>Review Guru Cards: Employer Access, Review Management</span></label></li>
-<li><label><input type="checkbox"><span>Intro to Bug Process + Site Feedback tagging</span></label></li>
-<li><label><input type="checkbox"><span>Walkthrough: responding to flagged reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete knowledge check quiz</span></label></li>
-<li><label><input type="checkbox"><span>Shadow 1 live case with commentary</span></label></li>
-<li><label><input type="checkbox"><span>1:1 with TL to discuss progress + Week 2 preview</span></label></li>
-</ul>
-    </details>
-    
-  </div>
-
-  <div class="week">
-    <h2>Week 4: Ramp-Up Support</h2>
-    <details>
-      <summary>Day 1: Live Queue Supervision</summary>
-      <ul>
-<li><label><input type="checkbox"><span>Complete Lessonly: Security Overview</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Privacy Training</span></label></li>
-<li><label><input type="checkbox"><span>Set up tools (Slack, Gmail, Salesforce)</span></label></li>
-<li><label><input type="checkbox"><span>Walk through Employer-view in Salesforce</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Salesforce Basics</span></label></li>
-<li><label><input type="checkbox"><span>Review Account Mgmt, Content Issues, Flagged Reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Legal Requests</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Anonymous Content</span></label></li>
-<li><label><input type="checkbox"><span>Review escalation flow in Guru</span></label></li>
-<li><label><input type="checkbox"><span>Discuss privacy and review risks</span></label></li>
-<li><label><input type="checkbox"><span>Review Guru Cards: Employer Access, Review Management</span></label></li>
-<li><label><input type="checkbox"><span>Intro to Bug Process + Site Feedback tagging</span></label></li>
-<li><label><input type="checkbox"><span>Walkthrough: responding to flagged reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete knowledge check quiz</span></label></li>
-<li><label><input type="checkbox"><span>Shadow 1 live case with commentary</span></label></li>
-<li><label><input type="checkbox"><span>1:1 with TL to discuss progress + Week 2 preview</span></label></li>
-</ul>
-    </details>
-    <details>
-      <summary>Day 2: Cross-Queue Exposure</summary>
-      <ul>
-<li><label><input type="checkbox"><span>Complete Lessonly: Security Overview</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Privacy Training</span></label></li>
-<li><label><input type="checkbox"><span>Set up tools (Slack, Gmail, Salesforce)</span></label></li>
-<li><label><input type="checkbox"><span>Walk through Employer-view in Salesforce</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Salesforce Basics</span></label></li>
-<li><label><input type="checkbox"><span>Review Account Mgmt, Content Issues, Flagged Reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Legal Requests</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Anonymous Content</span></label></li>
-<li><label><input type="checkbox"><span>Review escalation flow in Guru</span></label></li>
-<li><label><input type="checkbox"><span>Discuss privacy and review risks</span></label></li>
-<li><label><input type="checkbox"><span>Review Guru Cards: Employer Access, Review Management</span></label></li>
-<li><label><input type="checkbox"><span>Intro to Bug Process + Site Feedback tagging</span></label></li>
-<li><label><input type="checkbox"><span>Walkthrough: responding to flagged reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete knowledge check quiz</span></label></li>
-<li><label><input type="checkbox"><span>Shadow 1 live case with commentary</span></label></li>
-<li><label><input type="checkbox"><span>1:1 with TL to discuss progress + Week 2 preview</span></label></li>
-</ul>
-    </details>
-    <details>
-      <summary>Day 3: Shadow to Solo Practice</summary>
-      <ul>
-<li><label><input type="checkbox"><span>Complete Lessonly: Security Overview</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Privacy Training</span></label></li>
-<li><label><input type="checkbox"><span>Set up tools (Slack, Gmail, Salesforce)</span></label></li>
-<li><label><input type="checkbox"><span>Walk through Employer-view in Salesforce</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Salesforce Basics</span></label></li>
-<li><label><input type="checkbox"><span>Review Account Mgmt, Content Issues, Flagged Reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Legal Requests</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Anonymous Content</span></label></li>
-<li><label><input type="checkbox"><span>Review escalation flow in Guru</span></label></li>
-<li><label><input type="checkbox"><span>Discuss privacy and review risks</span></label></li>
-<li><label><input type="checkbox"><span>Review Guru Cards: Employer Access, Review Management</span></label></li>
-<li><label><input type="checkbox"><span>Intro to Bug Process + Site Feedback tagging</span></label></li>
-<li><label><input type="checkbox"><span>Walkthrough: responding to flagged reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete knowledge check quiz</span></label></li>
-<li><label><input type="checkbox"><span>Shadow 1 live case with commentary</span></label></li>
-<li><label><input type="checkbox"><span>1:1 with TL to discuss progress + Week 2 preview</span></label></li>
-</ul>
-    </details>
-    <details>
-      <summary>Day 4: QA Deep-Dive</summary>
-      <ul>
-<li><label><input type="checkbox"><span>Complete Lessonly: Security Overview</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Privacy Training</span></label></li>
-<li><label><input type="checkbox"><span>Set up tools (Slack, Gmail, Salesforce)</span></label></li>
-<li><label><input type="checkbox"><span>Walk through Employer-view in Salesforce</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Salesforce Basics</span></label></li>
-<li><label><input type="checkbox"><span>Review Account Mgmt, Content Issues, Flagged Reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Legal Requests</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Anonymous Content</span></label></li>
-<li><label><input type="checkbox"><span>Review escalation flow in Guru</span></label></li>
-<li><label><input type="checkbox"><span>Discuss privacy and review risks</span></label></li>
-<li><label><input type="checkbox"><span>Review Guru Cards: Employer Access, Review Management</span></label></li>
-<li><label><input type="checkbox"><span>Intro to Bug Process + Site Feedback tagging</span></label></li>
-<li><label><input type="checkbox"><span>Walkthrough: responding to flagged reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete knowledge check quiz</span></label></li>
-<li><label><input type="checkbox"><span>Shadow 1 live case with commentary</span></label></li>
-<li><label><input type="checkbox"><span>1:1 with TL to discuss progress + Week 2 preview</span></label></li>
-</ul>
-    </details>
-    <details>
-      <summary>Day 5: End-of-Week Challenge</summary>
-      <ul>
-<li><label><input type="checkbox"><span>Complete Lessonly: Security Overview</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Privacy Training</span></label></li>
-<li><label><input type="checkbox"><span>Set up tools (Slack, Gmail, Salesforce)</span></label></li>
-<li><label><input type="checkbox"><span>Walk through Employer-view in Salesforce</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Salesforce Basics</span></label></li>
-<li><label><input type="checkbox"><span>Review Account Mgmt, Content Issues, Flagged Reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Legal Requests</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Anonymous Content</span></label></li>
-<li><label><input type="checkbox"><span>Review escalation flow in Guru</span></label></li>
-<li><label><input type="checkbox"><span>Discuss privacy and review risks</span></label></li>
-<li><label><input type="checkbox"><span>Review Guru Cards: Employer Access, Review Management</span></label></li>
-<li><label><input type="checkbox"><span>Intro to Bug Process + Site Feedback tagging</span></label></li>
-<li><label><input type="checkbox"><span>Walkthrough: responding to flagged reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete knowledge check quiz</span></label></li>
-<li><label><input type="checkbox"><span>Shadow 1 live case with commentary</span></label></li>
-<li><label><input type="checkbox"><span>1:1 with TL to discuss progress + Week 2 preview</span></label></li>
-</ul>
-    </details>
-    
-  </div>
-
-  <div class="week">
-    <h2>Week 5: Independent Queue Work</h2>
-    <details>
-      <summary>Day 1: 80% Productivity Target</summary>
-      <ul>
-<li><label><input type="checkbox"><span>Complete Lessonly: Security Overview</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Privacy Training</span></label></li>
-<li><label><input type="checkbox"><span>Set up tools (Slack, Gmail, Salesforce)</span></label></li>
-<li><label><input type="checkbox"><span>Walk through Employer-view in Salesforce</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Salesforce Basics</span></label></li>
-<li><label><input type="checkbox"><span>Review Account Mgmt, Content Issues, Flagged Reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Legal Requests</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Anonymous Content</span></label></li>
-<li><label><input type="checkbox"><span>Review escalation flow in Guru</span></label></li>
-<li><label><input type="checkbox"><span>Discuss privacy and review risks</span></label></li>
-<li><label><input type="checkbox"><span>Review Guru Cards: Employer Access, Review Management</span></label></li>
-<li><label><input type="checkbox"><span>Intro to Bug Process + Site Feedback tagging</span></label></li>
-<li><label><input type="checkbox"><span>Walkthrough: responding to flagged reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete knowledge check quiz</span></label></li>
-<li><label><input type="checkbox"><span>Shadow 1 live case with commentary</span></label></li>
-<li><label><input type="checkbox"><span>1:1 with TL to discuss progress + Week 2 preview</span></label></li>
-</ul>
-    </details>
-    <details>
-      <summary>Day 2: Content Accuracy + Tag Mastery</summary>
-      <ul>
-<li><label><input type="checkbox"><span>Complete Lessonly: Security Overview</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Privacy Training</span></label></li>
-<li><label><input type="checkbox"><span>Set up tools (Slack, Gmail, Salesforce)</span></label></li>
-<li><label><input type="checkbox"><span>Walk through Employer-view in Salesforce</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Salesforce Basics</span></label></li>
-<li><label><input type="checkbox"><span>Review Account Mgmt, Content Issues, Flagged Reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Legal Requests</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Anonymous Content</span></label></li>
-<li><label><input type="checkbox"><span>Review escalation flow in Guru</span></label></li>
-<li><label><input type="checkbox"><span>Discuss privacy and review risks</span></label></li>
-<li><label><input type="checkbox"><span>Review Guru Cards: Employer Access, Review Management</span></label></li>
-<li><label><input type="checkbox"><span>Intro to Bug Process + Site Feedback tagging</span></label></li>
-<li><label><input type="checkbox"><span>Walkthrough: responding to flagged reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete knowledge check quiz</span></label></li>
-<li><label><input type="checkbox"><span>Shadow 1 live case with commentary</span></label></li>
-<li><label><input type="checkbox"><span>1:1 with TL to discuss progress + Week 2 preview</span></label></li>
-</ul>
-    </details>
-    <details>
-      <summary>Day 3: Partner Coaching</summary>
-      <ul>
-<li><label><input type="checkbox"><span>Complete Lessonly: Security Overview</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Privacy Training</span></label></li>
-<li><label><input type="checkbox"><span>Set up tools (Slack, Gmail, Salesforce)</span></label></li>
-<li><label><input type="checkbox"><span>Walk through Employer-view in Salesforce</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Salesforce Basics</span></label></li>
-<li><label><input type="checkbox"><span>Review Account Mgmt, Content Issues, Flagged Reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Legal Requests</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Anonymous Content</span></label></li>
-<li><label><input type="checkbox"><span>Review escalation flow in Guru</span></label></li>
-<li><label><input type="checkbox"><span>Discuss privacy and review risks</span></label></li>
-<li><label><input type="checkbox"><span>Review Guru Cards: Employer Access, Review Management</span></label></li>
-<li><label><input type="checkbox"><span>Intro to Bug Process + Site Feedback tagging</span></label></li>
-<li><label><input type="checkbox"><span>Walkthrough: responding to flagged reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete knowledge check quiz</span></label></li>
-<li><label><input type="checkbox"><span>Shadow 1 live case with commentary</span></label></li>
-<li><label><input type="checkbox"><span>1:1 with TL to discuss progress + Week 2 preview</span></label></li>
-</ul>
-    </details>
-    <details>
-      <summary>Day 4: Communication Focus</summary>
-      <ul>
-<li><label><input type="checkbox"><span>Complete Lessonly: Security Overview</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Privacy Training</span></label></li>
-<li><label><input type="checkbox"><span>Set up tools (Slack, Gmail, Salesforce)</span></label></li>
-<li><label><input type="checkbox"><span>Walk through Employer-view in Salesforce</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Salesforce Basics</span></label></li>
-<li><label><input type="checkbox"><span>Review Account Mgmt, Content Issues, Flagged Reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Legal Requests</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Anonymous Content</span></label></li>
-<li><label><input type="checkbox"><span>Review escalation flow in Guru</span></label></li>
-<li><label><input type="checkbox"><span>Discuss privacy and review risks</span></label></li>
-<li><label><input type="checkbox"><span>Review Guru Cards: Employer Access, Review Management</span></label></li>
-<li><label><input type="checkbox"><span>Intro to Bug Process + Site Feedback tagging</span></label></li>
-<li><label><input type="checkbox"><span>Walkthrough: responding to flagged reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete knowledge check quiz</span></label></li>
-<li><label><input type="checkbox"><span>Shadow 1 live case with commentary</span></label></li>
-<li><label><input type="checkbox"><span>1:1 with TL to discuss progress + Week 2 preview</span></label></li>
-</ul>
-    </details>
-    <details>
-      <summary>Day 5: TL Check-In & Prep</summary>
-      <ul>
-<li><label><input type="checkbox"><span>Complete Lessonly: Security Overview</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Privacy Training</span></label></li>
-<li><label><input type="checkbox"><span>Set up tools (Slack, Gmail, Salesforce)</span></label></li>
-<li><label><input type="checkbox"><span>Walk through Employer-view in Salesforce</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Salesforce Basics</span></label></li>
-<li><label><input type="checkbox"><span>Review Account Mgmt, Content Issues, Flagged Reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Legal Requests</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Anonymous Content</span></label></li>
-<li><label><input type="checkbox"><span>Review escalation flow in Guru</span></label></li>
-<li><label><input type="checkbox"><span>Discuss privacy and review risks</span></label></li>
-<li><label><input type="checkbox"><span>Review Guru Cards: Employer Access, Review Management</span></label></li>
-<li><label><input type="checkbox"><span>Intro to Bug Process + Site Feedback tagging</span></label></li>
-<li><label><input type="checkbox"><span>Walkthrough: responding to flagged reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete knowledge check quiz</span></label></li>
-<li><label><input type="checkbox"><span>Shadow 1 live case with commentary</span></label></li>
-<li><label><input type="checkbox"><span>1:1 with TL to discuss progress + Week 2 preview</span></label></li>
-</ul>
-    </details>
-    
-  </div>
-
-  <div class="week">
-    <h2>Week 6: Full Production</h2>
-    <details>
-      <summary>Day 1: Independent Work + Metrics</summary>
-      <ul>
-<li><label><input type="checkbox"><span>Complete Lessonly: Security Overview</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Privacy Training</span></label></li>
-<li><label><input type="checkbox"><span>Set up tools (Slack, Gmail, Salesforce)</span></label></li>
-<li><label><input type="checkbox"><span>Walk through Employer-view in Salesforce</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Salesforce Basics</span></label></li>
-<li><label><input type="checkbox"><span>Review Account Mgmt, Content Issues, Flagged Reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Legal Requests</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Anonymous Content</span></label></li>
-<li><label><input type="checkbox"><span>Review escalation flow in Guru</span></label></li>
-<li><label><input type="checkbox"><span>Discuss privacy and review risks</span></label></li>
-<li><label><input type="checkbox"><span>Review Guru Cards: Employer Access, Review Management</span></label></li>
-<li><label><input type="checkbox"><span>Intro to Bug Process + Site Feedback tagging</span></label></li>
-<li><label><input type="checkbox"><span>Walkthrough: responding to flagged reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete knowledge check quiz</span></label></li>
-<li><label><input type="checkbox"><span>Shadow 1 live case with commentary</span></label></li>
-<li><label><input type="checkbox"><span>1:1 with TL to discuss progress + Week 2 preview</span></label></li>
-</ul>
-    </details>
-    <details>
-      <summary>Day 2: QA Challenge</summary>
-      <ul>
-<li><label><input type="checkbox"><span>Complete Lessonly: Security Overview</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Privacy Training</span></label></li>
-<li><label><input type="checkbox"><span>Set up tools (Slack, Gmail, Salesforce)</span></label></li>
-<li><label><input type="checkbox"><span>Walk through Employer-view in Salesforce</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Salesforce Basics</span></label></li>
-<li><label><input type="checkbox"><span>Review Account Mgmt, Content Issues, Flagged Reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Legal Requests</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Anonymous Content</span></label></li>
-<li><label><input type="checkbox"><span>Review escalation flow in Guru</span></label></li>
-<li><label><input type="checkbox"><span>Discuss privacy and review risks</span></label></li>
-<li><label><input type="checkbox"><span>Review Guru Cards: Employer Access, Review Management</span></label></li>
-<li><label><input type="checkbox"><span>Intro to Bug Process + Site Feedback tagging</span></label></li>
-<li><label><input type="checkbox"><span>Walkthrough: responding to flagged reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete knowledge check quiz</span></label></li>
-<li><label><input type="checkbox"><span>Shadow 1 live case with commentary</span></label></li>
-<li><label><input type="checkbox"><span>1:1 with TL to discuss progress + Week 2 preview</span></label></li>
-</ul>
-    </details>
-    <details>
-      <summary>Day 3: Ready to Ramp</summary>
-      <ul>
-<li><label><input type="checkbox"><span>Complete Lessonly: Security Overview</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Privacy Training</span></label></li>
-<li><label><input type="checkbox"><span>Set up tools (Slack, Gmail, Salesforce)</span></label></li>
-<li><label><input type="checkbox"><span>Walk through Employer-view in Salesforce</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Salesforce Basics</span></label></li>
-<li><label><input type="checkbox"><span>Review Account Mgmt, Content Issues, Flagged Reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Legal Requests</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Anonymous Content</span></label></li>
-<li><label><input type="checkbox"><span>Review escalation flow in Guru</span></label></li>
-<li><label><input type="checkbox"><span>Discuss privacy and review risks</span></label></li>
-<li><label><input type="checkbox"><span>Review Guru Cards: Employer Access, Review Management</span></label></li>
-<li><label><input type="checkbox"><span>Intro to Bug Process + Site Feedback tagging</span></label></li>
-<li><label><input type="checkbox"><span>Walkthrough: responding to flagged reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete knowledge check quiz</span></label></li>
-<li><label><input type="checkbox"><span>Shadow 1 live case with commentary</span></label></li>
-<li><label><input type="checkbox"><span>1:1 with TL to discuss progress + Week 2 preview</span></label></li>
-</ul>
-    </details>
-    <details>
-      <summary>Day 4: Graduation Prep</summary>
-      <ul>
-<li><label><input type="checkbox"><span>Complete Lessonly: Security Overview</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Privacy Training</span></label></li>
-<li><label><input type="checkbox"><span>Set up tools (Slack, Gmail, Salesforce)</span></label></li>
-<li><label><input type="checkbox"><span>Walk through Employer-view in Salesforce</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Salesforce Basics</span></label></li>
-<li><label><input type="checkbox"><span>Review Account Mgmt, Content Issues, Flagged Reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Legal Requests</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Anonymous Content</span></label></li>
-<li><label><input type="checkbox"><span>Review escalation flow in Guru</span></label></li>
-<li><label><input type="checkbox"><span>Discuss privacy and review risks</span></label></li>
-<li><label><input type="checkbox"><span>Review Guru Cards: Employer Access, Review Management</span></label></li>
-<li><label><input type="checkbox"><span>Intro to Bug Process + Site Feedback tagging</span></label></li>
-<li><label><input type="checkbox"><span>Walkthrough: responding to flagged reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete knowledge check quiz</span></label></li>
-<li><label><input type="checkbox"><span>Shadow 1 live case with commentary</span></label></li>
-<li><label><input type="checkbox"><span>1:1 with TL to discuss progress + Week 2 preview</span></label></li>
-</ul>
-    </details>
-    <details>
-      <summary>Day 5: Graduation</summary>
-      <ul>
-<li><label><input type="checkbox"><span>Complete Lessonly: Security Overview</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Privacy Training</span></label></li>
-<li><label><input type="checkbox"><span>Set up tools (Slack, Gmail, Salesforce)</span></label></li>
-<li><label><input type="checkbox"><span>Walk through Employer-view in Salesforce</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Salesforce Basics</span></label></li>
-<li><label><input type="checkbox"><span>Review Account Mgmt, Content Issues, Flagged Reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Legal Requests</span></label></li>
-<li><label><input type="checkbox"><span>Complete Lessonly: Anonymous Content</span></label></li>
-<li><label><input type="checkbox"><span>Review escalation flow in Guru</span></label></li>
-<li><label><input type="checkbox"><span>Discuss privacy and review risks</span></label></li>
-<li><label><input type="checkbox"><span>Review Guru Cards: Employer Access, Review Management</span></label></li>
-<li><label><input type="checkbox"><span>Intro to Bug Process + Site Feedback tagging</span></label></li>
-<li><label><input type="checkbox"><span>Walkthrough: responding to flagged reviews</span></label></li>
-<li><label><input type="checkbox"><span>Complete knowledge check quiz</span></label></li>
-<li><label><input type="checkbox"><span>Shadow 1 live case with commentary</span></label></li>
-<li><label><input type="checkbox"><span>1:1 with TL to discuss progress + Week 2 preview</span></label></li>
-</ul>
-    </details>
-    
-  </div>
-
+<div class="week active">
+  <h2>Week 1: Orientation & Core Concepts</h2>
+  <details>
+    <summary>Day 1: Intro & Overview</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>Attend welcome session (Support TL)</span></label></li>
+      <li><label><input type="checkbox"><span>Review <a href="#" target="_blank">Employer + PC training overview</a></span></label></li>
+      <li><label><input type="checkbox"><span>Complete <a href="#" target="_blank">Lessonly: Welcome to PC</a></span></label></li>
+    </ul>
+  </details>
+  <details>
+    <summary>Day 2: Sensitive Case Types & Support Tools</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>Read <a href="#" target="_blank">Guru: Sensitive Case Types – PC</a></span></label></li>
+      <li><label><input type="checkbox"><span>Review <a href="#" target="_blank">PC Terminology & Profiles Overview</a></span></label></li>
+      <li><label><input type="checkbox"><span>Complete <a href="#" target="_blank">Lessonly: Employer Content FAQs</a></span></label></li>
+    </ul>
+  </details>
+  <details>
+    <summary>Day 3: Help Center & Branding Resources</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>Explore <a href="#" target="_blank">Employer Center Overview</a> materials</span></label></li>
+      <li><label><input type="checkbox"><span>Review <a href="#" target="_blank">Branding Support FAQ</a> + Webinar</span></label></li>
+      <li><label><input type="checkbox"><span>Practice role play using <a href="#" target="_blank">Glassdoor Infosite</a></span></label></li>
+    </ul>
+  </details>
+  <details>
+    <summary>Day 4: Profile & Admin Tasks</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>Complete <a href="#" target="_blank">Lessonly: Admin Page Overview</a></span></label></li>
+      <li><label><input type="checkbox"><span>Complete <a href="#" target="_blank">Lessonly: Subsidiaries & Duplicates</a></span></label></li>
+      <li><label><input type="checkbox"><span>Complete <a href="#" target="_blank">Lessonly: Rebrands & Acquisitions</a></span></label></li>
+    </ul>
+  </details>
+  <details>
+    <summary>Day 5: Practice Cases & Live Queue</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>Complete 3 simulated <a href="#" target="_blank">PC cases</a> (profile edits)</span></label></li>
+      <li><label><input type="checkbox"><span>Shadow Profile agent (1hr)</span></label></li>
+      <li><label><input type="checkbox"><span>Reflection: PC tools & terminology</span></label></li>
+    </ul>
+  </details>
 </div>
+<div class="week">
+  <h2>Week 2: Salesforce & Case Types</h2>
+  <details>
+    <summary>Day 1: Salesforce Orientation</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>Complete <a href="#" target="_blank">Lessonly: Salesforce Basics</a></span></label></li>
+      <li><label><input type="checkbox"><span>Walkthrough: <a href="#" target="_blank">Omni-Channel Case Routing</a></span></label></li>
+      <li><label><input type="checkbox"><span>Explore <a href="#" target="_blank">PC SLA Flags & Queues</a></span></label></li>
+    </ul>
+  </details>
+  <details>
+    <summary>Day 2: Understanding Case Types</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>Complete <a href="#" target="_blank">Lessonly: PC Case Types Overview</a></span></label></li>
+      <li><label><input type="checkbox"><span>Review: <a href="#" target="_blank">International Requests</a> guide</span></label></li>
+    </ul>
+  </details>
+  <details>
+    <summary>Day 3: Retiring & Reassigning Profiles</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>Read <a href="#" target="_blank">Guru: Retiring Profiles</a></span></label></li>
+      <li><label><input type="checkbox"><span>Complete <a href="#" target="_blank">Lessonly: Reassigning Content</a></span></label></li>
+    </ul>
+  </details>
+  <details>
+    <summary>Day 4: Out-of-Business & Exception Profiles</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>Review <a href="#" target="_blank">Out-of-Business Verification Guidelines</a></span></label></li>
+      <li><label><input type="checkbox"><span>Read <a href="#" target="_blank">Exception Profile Procedures</a></span></label></li>
+    </ul>
+  </details>
+  <details>
+    <summary>Day 5: Practice Cases</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>Work on 3 sample PC case assignments</span></label></li>
+      <li><label><input type="checkbox"><span>Attend TL review session</span></label></li>
+    </ul>
+  </details>
+</div>
+<div class="week">
+  <h2>Week 3: Profile Management & Merges</h2>
+  <details>
+    <summary>Day 1: Admin Data Deep Dive</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>Practice with <a href="#" target="_blank">Admin Page Tool</a></span></label></li>
+      <li><label><input type="checkbox"><span>Review <a href="#" target="_blank">Employer Center IDs</a></span></label></li>
+    </ul>
+  </details>
+  <details>
+    <summary>Day 2: Subsidiaries & Duplicates</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>Complete <a href="#" target="_blank">Lessonly: Handling Duplicates</a></span></label></li>
+      <li><label><input type="checkbox"><span>Practice: Merge and cleanup tasks</span></label></li>
+    </ul>
+  </details>
+  <details>
+    <summary>Day 3: Live Queue</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>Shadow peer in PC queue</span></label></li>
+      <li><label><input type="checkbox"><span>Track 5 observed case outcomes</span></label></li>
+    </ul>
+  </details>
+  <details>
+    <summary>Day 4: Practice Challenge</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>Complete 5 simulated profile cases</span></label></li>
+      <li><label><input type="checkbox"><span>Review with TL and complete checklist</span></label></li>
+    </ul>
+  </details>
+  <details>
+    <summary>Day 5: End-of-Week Recap</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>Join feedback session with TL</span></label></li>
+      <li><label><input type="checkbox"><span>Self-reflection journal (submit via form)</span></label></li>
+    </ul>
+  </details>
+</div>
+<div class="week">
+  <h2>Week 4: Live Queue & QA Review</h2>
+  <details>
+    <summary>Day 1: Full Live Queue Shift</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>Agent handles real PC queue for 3 hours</span></label></li>
+      <li><label><input type="checkbox"><span>Receive mid-day coaching</span></label></li>
+    </ul>
+  </details>
+  <details>
+    <summary>Day 2: QA Session</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>QA-led review of 5 cases</span></label></li>
+      <li><label><input type="checkbox"><span>Document patterns of strengths & misses</span></label></li>
+    </ul>
+  </details>
+  <details>
+    <summary>Day 3: Corrective Practice</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>Handle 3 simulated flagged cases</span></label></li>
+      <li><label><input type="checkbox"><span>TL review: response quality</span></label></li>
+    </ul>
+  </details>
+  <details>
+    <summary>Day 4: Shadowing & Peer Feedback</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>Shadow peer & complete observation form</span></label></li>
+      <li><label><input type="checkbox"><span>Provide constructive peer feedback</span></label></li>
+    </ul>
+  </details>
+  <details>
+    <summary>Day 5: End-of-Week Reflection</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>Submit written reflection on QA learnings</span></label></li>
+      <li><label><input type="checkbox"><span>Check-in with TL to review week</span></label></li>
+    </ul>
+  </details>
+</div>
+<div class="week">
+  <h2>Week 5: Advanced Tools & Bug Reporting</h2>
+  <details>
+    <summary>Day 1: Disambiguation Tools</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>Complete <a href="#" target="_blank">Lessonly: PC Disambiguation</a></span></label></li>
+      <li><label><input type="checkbox"><span>Watch: <a href="#" target="_blank">Disambiguation Instructional Video</a></span></label></li>
+    </ul>
+  </details>
+  <details>
+    <summary>Day 2: Jira for PC</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>Intro to Jira workflow for bugs</span></label></li>
+      <li><label><input type="checkbox"><span>Practice submitting sample Jira ticket</span></label></li>
+    </ul>
+  </details>
+  <details>
+    <summary>Day 3: Bug Patterns</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>Review common PC-related bugs</span></label></li>
+      <li><label><input type="checkbox"><span>Submit sample triage escalation</span></label></li>
+    </ul>
+  </details>
+  <details>
+    <summary>Day 4: Live Escalation Drill</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>Simulate 2 escalations to Mod or Product</span></label></li>
+      <li><label><input type="checkbox"><span>Document resolution flow</span></label></li>
+    </ul>
+  </details>
+  <details>
+    <summary>Day 5: Peer Support Shift</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>Support peers on live queue as Floor Support</span></label></li>
+      <li><label><input type="checkbox"><span>Reflection: escalation & support experience</span></label></li>
+    </ul>
+  </details>
+</div>
+<div class="week">
+  <h2>Week 6: Graduation & Final Live Cases</h2>
+  <details>
+    <summary>Day 1: Full Queue Day</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>Work independently on full 4-hour queue shift</span></label></li>
+      <li><label><input type="checkbox"><span>Track and log resolved case types</span></label></li>
+    </ul>
+  </details>
+  <details>
+    <summary>Day 2: Calibration Exercise</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>Review and score peer's cases using QA rubric</span></label></li>
+      <li><label><input type="checkbox"><span>Attend calibration meeting</span></label></li>
+    </ul>
+  </details>
+  <details>
+    <summary>Day 3: Graduation Case Review</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>TL review of 10 final cases</span></label></li>
+      <li><label><input type="checkbox"><span>1:1 discussion on next steps post-training</span></label></li>
+    </ul>
+  </details>
+  <details>
+    <summary>Day 4: Survey & Wrap Up</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>Submit training feedback survey</span></label></li>
+      <li><label><input type="checkbox"><span>Sign off final checklist</span></label></li>
+    </ul>
+  </details>
+  <details>
+    <summary>Day 5: Graduation!</summary>
+    <ul>
+      <li><label><input type="checkbox"><span>Celebrate completion with team</span></label></li>
+      <li><label><input type="checkbox"><span>Begin regular queue coverage</span></label></li>
+    </ul>
+  </details>
+</div>
+
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const tabs = document.querySelectorAll('.tab-btn');
-      const weeks = document.querySelectorAll('.week');
+  document.addEventListener("DOMContentLoaded", function() {
+    const tabs = document.querySelectorAll('.tab-btn');
+    const weeks = document.querySelectorAll('.week');
 
-      if (tabs.length === 0 || weeks.length === 0) return;
-
-      tabs.forEach(tab => {
-        tab.addEventListener('click', function() {
-          const index = parseInt(this.getAttribute('data-index'));
-
-          tabs.forEach(btn => btn.classList.remove('active'));
-          this.classList.add('active');
-
-          weeks.forEach(week => week.classList.remove('active'));
-          if (weeks[index]) {
-            weeks[index].classList.add('active');
-          }
-        });
+    tabs.forEach(tab => {
+      tab.addEventListener('click', function() {
+        const index = parseInt(this.getAttribute('data-index'));
+        tabs.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+        weeks.forEach(week => week.classList.remove('active'));
+        weeks[index].classList.add('active');
       });
     });
-  </script>
+  });
+</script>
 </body>
 </html>
