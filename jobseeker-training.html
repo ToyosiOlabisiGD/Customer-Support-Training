@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jobseeker Support Training</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #2b7a78;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      background: #def2f1;
+      justify-content: center;
+    }
+    .tabs button {
+      background: transparent;
+      border: none;
+      padding: 1rem;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .tabs button:hover, .tabs button.active {
+      background: #3aafa9;
+      color: white;
+    }
+    .week {
+      display: none;
+      padding: 1rem;
+    }
+    .week.active {
+      display: block;
+    }
+    details {
+      margin: 0.5rem 0;
+      background: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jobseeker Support Training</h1>
+    <p>6-Week Onboarding Program</p>
+  </header>
+
+  <div class="tabs">
+    <button class="tab-btn active" data-index="0">Week 1</button>
+    <button class="tab-btn" data-index="1">Week 2</button>
+    <button class="tab-btn" data-index="2">Week 3</button>
+    <button class="tab-btn" data-index="3">Week 4</button>
+    <button class="tab-btn" data-index="4">Week 5</button>
+    <button class="tab-btn" data-index="5">Week 6</button>
+  </div>
+
+  <div class="week active">
+    <h2>Week 1: Foundations & Compliance</h2>
+    <details>
+      <summary>Day 1: Onboarding, Mission & Tools</summary>
+      <ul>
+        <li>Meet the TL and team</li>
+        <li>Review company mission, vision, and values</li>
+        <li>Complete C&C Security, Privacy Escalation modules (Lessonly)</li>
+        <li>Set up required accounts and workspace tools (Gmail, Slack, Salesforce)</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Day 2: Salesforce Navigation</summary>
+      <ul>
+        <li>Instructor-led Salesforce walkthrough</li>
+        <li>Complete Salesforce Basics module (Lessonly)</li>
+        <li>Practice creating and resolving test cases</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Day 3: Queue Processes & Escalation Overview</summary>
+      <ul>
+        <li>Review jobseeker workflow overview doc</li>
+        <li>Complete Escalation Policy & Floor Support (Lessonly)</li>
+        <li>Shadow queue triage process</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Day 4: Legal & Compliance Readiness</summary>
+      <ul>
+        <li>Complete Legal Requests, Anonymous/Private Info modules (Lessonly)</li>
+        <li>Review Legal Request Tracker & T&S escalation flow</li>
+        <li>QA walkthrough of sample compliance case</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Day 5: Systems Integration & Weekly Recap</summary>
+      <ul>
+        <li>Intro to Google Sheets Tracker, Guru Cards, and Feedback Forms</li>
+        <li>Weekly knowledge check quiz</li>
+        <li>Group discussion on Week 1 learnings</li>
+      </ul>
+    </details>
+    <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true">Loading…</iframe>
+  </div>
+
+  <div class="week">
+    <h2>Week 2: Core Tools & Flagged Content</h2>
+    <details>
+      <summary>Day 1: FAQ Modules + Account Support</summary>
+      <ul>
+        <li>Complete Care FAQs, Account Maintenance (Lessonly)</li>
+        <li>Begin observing account support tickets (shadow)</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Day 2: Profile Management + Reinstatement</summary>
+      <ul>
+        <li>Instructor-led session on profile issues</li>
+        <li>Review Guru Cards for Reinstatement</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Day 3: Flagged Content & Policy Review</summary>
+      <ul>
+        <li>Complete Flagged Content Training (Lessonly)</li>
+        <li>Work through 3 sample cases</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Day 4: Tool Practice + Escalations</summary>
+      <ul>
+        <li>Hands-on review of flagged content tools</li>
+        <li>Partner QA calibration session</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Day 5: Weekly Wrap-Up</summary>
+      <ul>
+        <li>Knowledge check quiz</li>
+        <li>TL Q&A session and feedback roundtable</li>
+      </ul>
+    </details>
+    <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true">Loading…</iframe>
+  </div>
+
+  <div class="week">
+    <h2>Week 3: Core Support & Practice</h2>
+    <details>
+      <summary>Day 1: Content Issues & Bug Reporting</summary>
+      <ul>
+        <li>Complete Content Issues, Site Bug Process modules</li>
+        <li>Admin Bug Process guide review</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Day 2: Jobseeker FAQs & Shadowing</summary>
+      <ul>
+        <li>Complete Jobseeker FAQ and Product Support modules</li>
+        <li>Observe real jobseeker case handling</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Day 3: Troubleshooting Deep Dive</summary>
+      <ul>
+        <li>Instructor-led session: Common Troubleshooting Patterns</li>
+        <li>Practice 5 troubleshooting simulations</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Day 4: Independent Queue Time + QA Review</summary>
+      <ul>
+        <li>Handle test cases solo (~3 hours)</li>
+        <li>QA partner debrief</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Day 5: Feedback & Readiness Check</summary>
+      <ul>
+        <li>Run readiness self-assessment</li>
+        <li>One-on-one with TL to review progress</li>
+      </ul>
+    </details>
+    <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true">Loading…</iframe>
+  </div>
+
+  <div class="week">
+    <h2>Week 4: Ramp-Up Phase</h2>
+    <details>
+      <summary>Day 1: Start Live Case Handling (Supervised)</summary>
+      <ul>
+        <li>Begin handling live jobseeker tickets (~3 hours)</li>
+        <li>Daily QA check-ins</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Day 2: Escalation Decision-Making</summary>
+      <ul>
+        <li>Instructor session: escalation vs. solve</li>
+        <li>Work through 5 triage decision scenarios</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Day 3: Queue Management Tools</summary>
+      <ul>
+        <li>Tool practice: assigning, tagging, tracking cases</li>
+        <li>Review KPIs: first response time, resolution time</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Day 4: Midweek Performance Review</summary>
+      <ul>
+        <li>Check-in with TL on performance trends</li>
+        <li>Self-review of 3 handled cases</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Day 5: Full Day in Queue (Supervised)</summary>
+      <ul>
+        <li>Target: 5–6 hours of queue time</li>
+        <li>Optional peer feedback form</li>
+      </ul>
+    </details>
+    <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true">Loading…</iframe>
+  </div>
+
+  <div class="week">
+    <h2>Week 5: Increased Autonomy</h2>
+    <details>
+      <summary>Day 1: Expanded Queue Work</summary>
+      <ul>
+        <li>Handle broader case types independently</li>
+        <li>Daily QA check-ins</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Day 2: Advanced Troubleshooting</summary>
+      <ul>
+        <li>Instructor-led session on uncommon case types</li>
+        <li>Shadow and replicate resolution patterns</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Day 3: Productivity vs. Quality</summary>
+      <ul>
+        <li>Data review of speed vs. accuracy metrics</li>
+        <li>Practice with QA scoring rubrics</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Day 4: Case Ownership & Documentation</summary>
+      <ul>
+        <li>Deep dive: effective internal notes</li>
+        <li>Practice updating escalation trackers</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Day 5: Mid-Ramp Feedback</summary>
+      <ul>
+        <li>TL-led case review</li>
+        <li>Identify growth areas for final week</li>
+      </ul>
+    </details>
+    <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true">Loading…</iframe>
+  </div>
+
+  <div class="week">
+    <h2>Week 6: Full Production</h2>
+    <details>
+      <summary>Day 1: Independent Queue Day</summary>
+      <ul>
+        <li>Target: 6–7 hours live handling</li>
+        <li>Log end-of-day reflections</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Day 2: Deep QA Calibration</summary>
+      <ul>
+        <li>Compare QA scores with peers</li>
+        <li>Refine approach to case tone and user trust</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Day 3: Independent Queue Day</summary>
+      <ul>
+        <li>Focus on accuracy and documentation</li>
+        <li>Start readiness checklist</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Day 4: Final Queue Push</summary>
+      <ul>
+        <li>Target 8 hours of consistent support</li>
+        <li>QA 2 peer cases for cross-feedback</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Day 5: Graduation Day</summary>
+      <ul>
+        <li>TL-led 1:1 debrief + certification</li>
+        <li>Wrap-up survey + team welcome</li>
+      </ul>
+    </details>
+    <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true">Loading…</iframe>
+  </div>
+
+  <!-- End Weeks 4–6 -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const tabs = document.querySelectorAll('.tab-btn');
+      const weeks = document.querySelectorAll('.week');
+
+      if (tabs.length === 0 || weeks.length === 0) return;
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+          const index = parseInt(this.getAttribute('data-index'));
+
+          tabs.forEach(btn => btn.classList.remove('active'));
+          this.classList.add('active');
+
+          weeks.forEach(week => week.classList.remove('active'));
+          if (weeks[index]) {
+            weeks[index].classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
