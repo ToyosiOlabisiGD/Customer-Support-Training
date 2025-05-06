@@ -3,63 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
   <title>Employer/Profile Changes Training</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
       margin: 0;
       padding: 0;
+      background-color: #f4f4f4;
     }
     header {
-      background: #2b7a78;
+      background-color: #0CAA41; /* Glassdoor Green */
       color: white;
-      padding: 2rem 1rem;
       text-align: center;
+      padding: 2.5rem 1rem;
     }
-    .tabs {
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      background: #def2f1;
+    header h1 {
+      margin: 0 0 10px;
+      font-size: 2.2rem;
     }
-    .tabs button {
-      flex: 1;
-      background: transparent;
-      border: none;
-      padding: 1rem;
-      cursor: pointer;
-      font-weight: bold;
-    }
-    .tabs button.active, .tabs button:hover {
-      background: #3aafa9;
-      color: white;
+    header p {
+      margin: 0;
+      font-size: 1.2rem;
     }
     .week {
-      display: none;
+      margin: 2rem auto;
       padding: 1rem;
+      max-width: 800px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    .week.active {
-      display: block;
+    .week h2 {
+      text-align: center;
+      color: #0CAA41;
     }
     details {
+      margin: 1rem 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 0.5rem;
+    }
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+    }
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+    li {
       margin: 0.5rem 0;
-      background: white;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
     input[type="checkbox"] {
-      transform: scale(1.3);
-      accent-color: #2b7a78;
-      margin-right: 10px;
-    }
-    input[type="checkbox"]:checked + span {
-      text-decoration: line-through;
-      color: #999;
+      margin-right: 0.5rem;
     }
     a {
-      color: #2b7a78;
+      color: #0CAA41;
+      text-decoration: none;
+    }
+    a:hover {
       text-decoration: underline;
     }
   </style>
@@ -67,267 +70,106 @@
 <body>
   <header>
     <h1>Employer/Profile Changes Training</h1>
-    <p>Interactive 6-week onboarding checklist</p>
+    <p>Interactive 6-week onboarding path</p>
   </header>
-  <div class="tabs">
-    <button class="tab-btn active" data-index="0">Week 1</button>
-    <button class="tab-btn" data-index="1">Week 2</button>
-    <button class="tab-btn" data-index="2">Week 3</button>
-    <button class="tab-btn" data-index="3">Week 4</button>
-    <button class="tab-btn" data-index="4">Week 5</button>
-    <button class="tab-btn" data-index="5">Week 6</button>
+
+  <!-- Week 1 -->
+  <div class="week">
+    <h2>Week 1</h2>
+    <details open>
+      <summary>Day 1</summary>
+      <ul>
+        <li><input type="checkbox"> Recap – Understanding of previous day’s training</li>
+        <li><input type="checkbox"> Intro – Overview of Employer & Training Path</li>
+        <li><input type="checkbox"> Sensitive Case Types – Employer Profile Changes (45 mins)</li>
+        <li><input type="checkbox"> Practice Cases – Sensitive Cases (14 cases)</li>
+        <li><input type="checkbox"> Lessonly: Employer Content FAQs (20 mins)</li>
+        <li><input type="checkbox"> Branding Support Overview (60 mins)</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Day 2</summary>
+      <ul>
+        <li><input type="checkbox"> Recap</li>
+        <li><input type="checkbox"> Guru: Employer FAQs – Community Support: T1 (120 mins)</li>
+        <li><input type="checkbox"> Help Center – Employer Center Overview + Articles (180 mins)</li>
+        <li><input type="checkbox"> Employer Photos/Community Photos – Help Center (80 mins)</li>
+        <li><input type="checkbox"> Role Play – Review profiles & tabs</li>
+      </ul>
+    </details>
   </div>
 
-<div class="week active">
-  <h2>Week 1: Orientation & Core Concepts</h2>
-  <details>
-    <summary>Day 1: Intro & Overview</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>Attend welcome session (Support TL)</span></label></li>
-      <li><label><input type="checkbox"><span>Review <a href="#" target="_blank">Employer + PC training overview</a></span></label></li>
-      <li><label><input type="checkbox"><span>Complete <a href="#" target="_blank">Lessonly: Welcome to PC</a></span></label></li>
-    </ul>
-  </details>
-  <details>
-    <summary>Day 2: Sensitive Case Types & Support Tools</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>Read <a href="#" target="_blank">Guru: Sensitive Case Types – PC</a></span></label></li>
-      <li><label><input type="checkbox"><span>Review <a href="#" target="_blank">PC Terminology & Profiles Overview</a></span></label></li>
-      <li><label><input type="checkbox"><span>Complete <a href="#" target="_blank">Lessonly: Employer Content FAQs</a></span></label></li>
-    </ul>
-  </details>
-  <details>
-    <summary>Day 3: Help Center & Branding Resources</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>Explore <a href="#" target="_blank">Employer Center Overview</a> materials</span></label></li>
-      <li><label><input type="checkbox"><span>Review <a href="#" target="_blank">Branding Support FAQ</a> + Webinar</span></label></li>
-      <li><label><input type="checkbox"><span>Practice role play using <a href="#" target="_blank">Glassdoor Infosite</a></span></label></li>
-    </ul>
-  </details>
-  <details>
-    <summary>Day 4: Profile & Admin Tasks</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>Complete <a href="#" target="_blank">Lessonly: Admin Page Overview</a></span></label></li>
-      <li><label><input type="checkbox"><span>Complete <a href="#" target="_blank">Lessonly: Subsidiaries & Duplicates</a></span></label></li>
-      <li><label><input type="checkbox"><span>Complete <a href="#" target="_blank">Lessonly: Rebrands & Acquisitions</a></span></label></li>
-    </ul>
-  </details>
-  <details>
-    <summary>Day 5: Practice Cases & Live Queue</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>Complete 3 simulated <a href="#" target="_blank">PC cases</a> (profile edits)</span></label></li>
-      <li><label><input type="checkbox"><span>Shadow Profile agent (1hr)</span></label></li>
-      <li><label><input type="checkbox"><span>Reflection: PC tools & terminology</span></label></li>
-    </ul>
-  </details>
-</div>
-<div class="week">
-  <h2>Week 2: Salesforce & Case Types</h2>
-  <details>
-    <summary>Day 1: Salesforce Orientation</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>Complete <a href="#" target="_blank">Lessonly: Salesforce Basics</a></span></label></li>
-      <li><label><input type="checkbox"><span>Walkthrough: <a href="#" target="_blank">Omni-Channel Case Routing</a></span></label></li>
-      <li><label><input type="checkbox"><span>Explore <a href="#" target="_blank">PC SLA Flags & Queues</a></span></label></li>
-    </ul>
-  </details>
-  <details>
-    <summary>Day 2: Understanding Case Types</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>Complete <a href="#" target="_blank">Lessonly: PC Case Types Overview</a></span></label></li>
-      <li><label><input type="checkbox"><span>Review: <a href="#" target="_blank">International Requests</a> guide</span></label></li>
-    </ul>
-  </details>
-  <details>
-    <summary>Day 3: Retiring & Reassigning Profiles</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>Read <a href="#" target="_blank">Guru: Retiring Profiles</a></span></label></li>
-      <li><label><input type="checkbox"><span>Complete <a href="#" target="_blank">Lessonly: Reassigning Content</a></span></label></li>
-    </ul>
-  </details>
-  <details>
-    <summary>Day 4: Out-of-Business & Exception Profiles</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>Review <a href="#" target="_blank">Out-of-Business Verification Guidelines</a></span></label></li>
-      <li><label><input type="checkbox"><span>Read <a href="#" target="_blank">Exception Profile Procedures</a></span></label></li>
-    </ul>
-  </details>
-  <details>
-    <summary>Day 5: Practice Cases</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>Work on 3 sample PC case assignments</span></label></li>
-      <li><label><input type="checkbox"><span>Attend TL review session</span></label></li>
-    </ul>
-  </details>
-</div>
-<div class="week">
-  <h2>Week 3: Profile Management & Merges</h2>
-  <details>
-    <summary>Day 1: Admin Data Deep Dive</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>Practice with <a href="#" target="_blank">Admin Page Tool</a></span></label></li>
-      <li><label><input type="checkbox"><span>Review <a href="#" target="_blank">Employer Center IDs</a></span></label></li>
-    </ul>
-  </details>
-  <details>
-    <summary>Day 2: Subsidiaries & Duplicates</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>Complete <a href="#" target="_blank">Lessonly: Handling Duplicates</a></span></label></li>
-      <li><label><input type="checkbox"><span>Practice: Merge and cleanup tasks</span></label></li>
-    </ul>
-  </details>
-  <details>
-    <summary>Day 3: Live Queue</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>Shadow peer in PC queue</span></label></li>
-      <li><label><input type="checkbox"><span>Track 5 observed case outcomes</span></label></li>
-    </ul>
-  </details>
-  <details>
-    <summary>Day 4: Practice Challenge</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>Complete 5 simulated profile cases</span></label></li>
-      <li><label><input type="checkbox"><span>Review with TL and complete checklist</span></label></li>
-    </ul>
-  </details>
-  <details>
-    <summary>Day 5: End-of-Week Recap</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>Join feedback session with TL</span></label></li>
-      <li><label><input type="checkbox"><span>Self-reflection journal (submit via form)</span></label></li>
-    </ul>
-  </details>
-</div>
-<div class="week">
-  <h2>Week 4: Live Queue & QA Review</h2>
-  <details>
-    <summary>Day 1: Full Live Queue Shift</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>Agent handles real PC queue for 3 hours</span></label></li>
-      <li><label><input type="checkbox"><span>Receive mid-day coaching</span></label></li>
-    </ul>
-  </details>
-  <details>
-    <summary>Day 2: QA Session</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>QA-led review of 5 cases</span></label></li>
-      <li><label><input type="checkbox"><span>Document patterns of strengths & misses</span></label></li>
-    </ul>
-  </details>
-  <details>
-    <summary>Day 3: Corrective Practice</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>Handle 3 simulated flagged cases</span></label></li>
-      <li><label><input type="checkbox"><span>TL review: response quality</span></label></li>
-    </ul>
-  </details>
-  <details>
-    <summary>Day 4: Shadowing & Peer Feedback</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>Shadow peer & complete observation form</span></label></li>
-      <li><label><input type="checkbox"><span>Provide constructive peer feedback</span></label></li>
-    </ul>
-  </details>
-  <details>
-    <summary>Day 5: End-of-Week Reflection</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>Submit written reflection on QA learnings</span></label></li>
-      <li><label><input type="checkbox"><span>Check-in with TL to review week</span></label></li>
-    </ul>
-  </details>
-</div>
-<div class="week">
-  <h2>Week 5: Advanced Tools & Bug Reporting</h2>
-  <details>
-    <summary>Day 1: Disambiguation Tools</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>Complete <a href="#" target="_blank">Lessonly: PC Disambiguation</a></span></label></li>
-      <li><label><input type="checkbox"><span>Watch: <a href="#" target="_blank">Disambiguation Instructional Video</a></span></label></li>
-    </ul>
-  </details>
-  <details>
-    <summary>Day 2: Jira for PC</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>Intro to Jira workflow for bugs</span></label></li>
-      <li><label><input type="checkbox"><span>Practice submitting sample Jira ticket</span></label></li>
-    </ul>
-  </details>
-  <details>
-    <summary>Day 3: Bug Patterns</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>Review common PC-related bugs</span></label></li>
-      <li><label><input type="checkbox"><span>Submit sample triage escalation</span></label></li>
-    </ul>
-  </details>
-  <details>
-    <summary>Day 4: Live Escalation Drill</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>Simulate 2 escalations to Mod or Product</span></label></li>
-      <li><label><input type="checkbox"><span>Document resolution flow</span></label></li>
-    </ul>
-  </details>
-  <details>
-    <summary>Day 5: Peer Support Shift</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>Support peers on live queue as Floor Support</span></label></li>
-      <li><label><input type="checkbox"><span>Reflection: escalation & support experience</span></label></li>
-    </ul>
-  </details>
-</div>
-<div class="week">
-  <h2>Week 6: Graduation & Final Live Cases</h2>
-  <details>
-    <summary>Day 1: Full Queue Day</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>Work independently on full 4-hour queue shift</span></label></li>
-      <li><label><input type="checkbox"><span>Track and log resolved case types</span></label></li>
-    </ul>
-  </details>
-  <details>
-    <summary>Day 2: Calibration Exercise</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>Review and score peer's cases using QA rubric</span></label></li>
-      <li><label><input type="checkbox"><span>Attend calibration meeting</span></label></li>
-    </ul>
-  </details>
-  <details>
-    <summary>Day 3: Graduation Case Review</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>TL review of 10 final cases</span></label></li>
-      <li><label><input type="checkbox"><span>1:1 discussion on next steps post-training</span></label></li>
-    </ul>
-  </details>
-  <details>
-    <summary>Day 4: Survey & Wrap Up</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>Submit training feedback survey</span></label></li>
-      <li><label><input type="checkbox"><span>Sign off final checklist</span></label></li>
-    </ul>
-  </details>
-  <details>
-    <summary>Day 5: Graduation!</summary>
-    <ul>
-      <li><label><input type="checkbox"><span>Celebrate completion with team</span></label></li>
-      <li><label><input type="checkbox"><span>Begin regular queue coverage</span></label></li>
-    </ul>
-  </details>
-</div>
+  <!-- Week 2 -->
+  <div class="week">
+    <h2>Week 2</h2>
+    <details>
+      <summary>Day 1</summary>
+      <ul>
+        <li><input type="checkbox"> Recap</li>
+        <li><input type="checkbox"> Practice Cases – Employer FAQs (3 cases)</li>
+        <li><input type="checkbox"> Practice Cases – Branding Support (9 cases)</li>
+        <li><input type="checkbox"> Live Queue – Shadow Employer/PC Agent (120 mins)</li>
+      </ul>
+    </details>
+  </div>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const tabs = document.querySelectorAll('.tab-btn');
-    const weeks = document.querySelectorAll('.week');
+  <!-- Week 3 -->
+  <div class="week">
+    <h2>Week 3</h2>
+    <details>
+      <summary>Day 1</summary>
+      <ul>
+        <li><input type="checkbox"> Recap</li>
+        <li><input type="checkbox"> Help Center – Job Search for Employers</li>
+        <li><input type="checkbox"> Live Queue – Shadow PC Agent (120 mins)</li>
+        <li><input type="checkbox"> Role Play – Employer Center exploration</li>
+      </ul>
+    </details>
+  </div>
 
-    tabs.forEach(tab => {
-      tab.addEventListener('click', function() {
-        const index = parseInt(this.getAttribute('data-index'));
-        tabs.forEach(btn => btn.classList.remove('active'));
-        this.classList.add('active');
-        weeks.forEach(week => week.classList.remove('active'));
-        weeks[index].classList.add('active');
-      });
-    });
-  });
-</script>
+  <!-- Week 4 -->
+  <div class="week">
+    <h2>Week 4</h2>
+    <details>
+      <summary>Day 1</summary>
+      <ul>
+        <li><input type="checkbox"> Recap</li>
+        <li><input type="checkbox"> Lessonly: Free Employer Accounts (80 mins)</li>
+        <li><input type="checkbox"> Guru: FEA – T1 Collection (160 mins)</li>
+        <li><input type="checkbox"> Practice Cases – FEA (5 cases)</li>
+        <li><input type="checkbox"> Help Center – Share WFH Policies (170 mins)</li>
+      </ul>
+    </details>
+  </div>
+
+  <!-- Week 5 -->
+  <div class="week">
+    <h2>Week 5</h2>
+    <details>
+      <summary>Day 1</summary>
+      <ul>
+        <li><input type="checkbox"> Recap</li>
+        <li><input type="checkbox"> Lessonly: Verified Company Changes (60 mins)</li>
+        <li><input type="checkbox"> Guru: Company Changes (120 mins)</li>
+        <li><input type="checkbox"> Help Center – CEO Info Updates & more</li>
+        <li><input type="checkbox"> Practice Cases – Verified Company Changes (3 cases)</li>
+      </ul>
+    </details>
+  </div>
+
+  <!-- Week 6 -->
+  <div class="week">
+    <h2>Week 6</h2>
+    <details>
+      <summary>Day 1</summary>
+      <ul>
+        <li><input type="checkbox"> Recap</li>
+        <li><input type="checkbox"> Help Center – Plans & Pricing + related content</li>
+        <li><input type="checkbox"> Live Queue – Independent work (300 mins)</li>
+        <li><input type="checkbox"> Final Role Play – Test workflows</li>
+      </ul>
+    </details>
+  </div>
+
 </body>
 </html>
