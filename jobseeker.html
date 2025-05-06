@@ -49,11 +49,14 @@
       border-radius: 5px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
-    iframe {
-      width: 100%;
-      height: 500px;
-      border: none;
-      margin-top: 1rem;
+    input[type="checkbox"] {
+      transform: scale(1.3);
+      accent-color: #2b7a78;
+      margin-right: 10px;
+    }
+    input[type="checkbox"]:checked + span {
+      text-decoration: line-through;
+      color: #999;
     }
   </style>
 </head>
@@ -73,271 +76,262 @@
   </div>
 
   <div class="week active">
-    <h2>Week 1: Foundations & Compliance</h2>
+    <h2>Week 1: Foundations & Compliance (Jobseeker Path)</h2>
     <details>
-      <summary>Day 1: Onboarding, Mission & Tools</summary>
+      <summary>Day 1: Welcome & Tool Setup</summary>
       <ul>
-        <li>Meet the TL and team</li>
-        <li>Review company mission, vision, and values</li>
-        <li>Complete C&C Security, Privacy Escalation modules (Lessonly)</li>
-        <li>Set up required accounts and workspace tools (Gmail, Slack, Salesforce)</li>
+        <li><label><input type="checkbox"><span>Complete Lessonly: Security Overview</span></label></li>
+        <li><label><input type="checkbox"><span>Complete Lessonly: Privacy Training</span></label></li>
+        <li><label><input type="checkbox"><span>Access Gmail, Slack, Salesforce</span></label></li>
+        <li><label><input type="checkbox"><span>Read Salesforce Agent View Guru</span></label></li>
+        <li><label><input type="checkbox"><span>Meet your Team Lead (1:1)</span></label></li>
       </ul>
     </details>
     <details>
-      <summary>Day 2: Salesforce Navigation</summary>
+      <summary>Day 2: Salesforce Basics & Guru Overview</summary>
       <ul>
-        <li>Instructor-led Salesforce walkthrough</li>
-        <li>Complete Salesforce Basics module (Lessonly)</li>
-        <li>Practice creating and resolving test cases</li>
+        <li><label><input type="checkbox"><span>Complete Lessonly: Salesforce Basics</span></label></li>
+        <li><label><input type="checkbox"><span>Explore key Guru cards for Jobseeker workflows</span></label></li>
+        <li><label><input type="checkbox"><span>Walkthrough of user types & permissions</span></label></li>
+        <li><label><input type="checkbox"><span>Shadow a live case</span></label></li>
       </ul>
     </details>
     <details>
-      <summary>Day 3: Queue Processes & Escalation Overview</summary>
+      <summary>Day 3: Case Types & Email Templates</summary>
       <ul>
-        <li>Review jobseeker workflow overview doc</li>
-        <li>Complete Escalation Policy & Floor Support (Lessonly)</li>
-        <li>Shadow queue triage process</li>
+        <li><label><input type="checkbox"><span>Review Jobseeker case types: Account, Content, Review Removal</span></label></li>
+        <li><label><input type="checkbox"><span>Complete Lessonly: Case Routing & Tags</span></label></li>
+        <li><label><input type="checkbox"><span>Guru overview: Saved replies & email templates</span></label></li>
+        <li><label><input type="checkbox"><span>Respond to 2 simulated cases using templates</span></label></li>
       </ul>
     </details>
     <details>
-      <summary>Day 4: Legal & Compliance Readiness</summary>
+      <summary>Day 4: Compliance & Privacy Escalations</summary>
       <ul>
-        <li>Complete Legal Requests, Anonymous/Private Info modules (Lessonly)</li>
-        <li>Review Legal Request Tracker & T&S escalation flow</li>
-        <li>QA walkthrough of sample compliance case</li>
+        <li><label><input type="checkbox"><span>Complete Lessonly: Legal Requests (Jobseeker)</span></label></li>
+        <li><label><input type="checkbox"><span>Review Guru: Anonymity & Privacy escalation steps</span></label></li>
+        <li><label><input type="checkbox"><span>Shadow 1 flagged case with escalation</span></label></li>
+        <li><label><input type="checkbox"><span>Submit mock escalation for feedback</span></label></li>
       </ul>
     </details>
     <details>
-      <summary>Day 5: Systems Integration & Weekly Recap</summary>
+      <summary>Day 5: Shadowing & Reflection</summary>
       <ul>
-        <li>Intro to Google Sheets Tracker, Guru Cards, and Feedback Forms</li>
-        <li>Weekly knowledge check quiz</li>
-        <li>Group discussion on Week 1 learnings</li>
+        <li><label><input type="checkbox"><span>Shadow 2 different workflows (tagged by TL)</span></label></li>
+        <li><label><input type="checkbox"><span>End-of-week reflection: top 3 takeaways</span></label></li>
+        <li><label><input type="checkbox"><span>1:1 with TL or trainer: review Week 1</span></label></li>
       </ul>
     </details>
-    
-  </div>
 
+  </div>
   <div class="week">
-    <h2>Week 2: Core Tools & Flagged Content</h2>
+    <h2>Week 2: Core Case Handling</h2>
     <details>
-      <summary>Day 1: FAQ Modules + Account Support</summary>
+      <summary>Day 1: Account Management Cases</summary>
       <ul>
-        <li>Complete Care FAQs, Account Maintenance (Lessonly)</li>
-        <li>Begin observing account support tickets (shadow)</li>
+        <li><label><input type="checkbox"><span>Review Lessonly: Account Case Types</span></label></li>
+        <li><label><input type="checkbox"><span>Live practice: password resets, login issues</span></label></li>
+        <li><label><input type="checkbox"><span>Guru: MFA & login troubleshooting flow</span></label></li>
       </ul>
     </details>
     <details>
-      <summary>Day 2: Profile Management + Reinstatement</summary>
+      <summary>Day 2: Content Concerns</summary>
       <ul>
-        <li>Instructor-led session on profile issues</li>
-        <li>Review Guru Cards for Reinstatement</li>
+        <li><label><input type="checkbox"><span>Guru overview: Community Guidelines & Moderation</span></label></li>
+        <li><label><input type="checkbox"><span>Review 3 flagged content examples with trainer</span></label></li>
+        <li><label><input type="checkbox"><span>Draft 2 replies using templates</span></label></li>
       </ul>
     </details>
     <details>
-      <summary>Day 3: Flagged Content & Policy Review</summary>
+      <summary>Day 3: QA Calibration</summary>
       <ul>
-        <li>Complete Flagged Content Training (Lessonly)</li>
-        <li>Work through 3 sample cases</li>
+        <li><label><input type="checkbox"><span>Review QA rubric & sample scored case</span></label></li>
+        <li><label><input type="checkbox"><span>Peer review: evaluate 2 mock cases</span></label></li>
+        <li><label><input type="checkbox"><span>1:1 debrief with TL</span></label></li>
       </ul>
     </details>
     <details>
-      <summary>Day 4: Tool Practice + Escalations</summary>
+      <summary>Day 4: Escalation Workflows</summary>
       <ul>
-        <li>Hands-on review of flagged content tools</li>
-        <li>Partner QA calibration session</li>
+        <li><label><input type="checkbox"><span>Complete Lessonly: Escalations & SLAs</span></label></li>
+        <li><label><input type="checkbox"><span>Shadow 1 TL handling a complex case</span></label></li>
+        <li><label><input type="checkbox"><span>Live coaching: triaging flagged reviews</span></label></li>
       </ul>
     </details>
     <details>
-      <summary>Day 5: Weekly Wrap-Up</summary>
+      <summary>Day 5: Weekly Review</summary>
       <ul>
-        <li>Knowledge check quiz</li>
-        <li>TL Q&A session and feedback roundtable</li>
+        <li><label><input type="checkbox"><span>Case review: 2 self-submitted tickets</span></label></li>
+        <li><label><input type="checkbox"><span>Complete feedback survey</span></label></li>
+        <li><label><input type="checkbox"><span>Prep checklist for Week 3</span></label></li>
       </ul>
     </details>
-    
   </div>
-
   <div class="week">
-    <h2>Week 3: Core Support & Practice</h2>
+    <h2>Week 3: Intermediate Case Work & Accuracy</h2>
     <details>
-      <summary>Day 1: Content Issues & Bug Reporting</summary>
+      <summary>Day 1: Queue Ownership</summary>
       <ul>
-        <li>Complete Content Issues, Site Bug Process modules</li>
-        <li>Admin Bug Process guide review</li>
+        <li><label><input type="checkbox"><span>Assign 5 real cases to agent queue</span></label></li>
+        <li><label><input type="checkbox"><span>1:1 live coaching session</span></label></li>
       </ul>
     </details>
     <details>
-      <summary>Day 2: Jobseeker FAQs & Shadowing</summary>
+      <summary>Day 2: Communication & Templates</summary>
       <ul>
-        <li>Complete Jobseeker FAQ and Product Support modules</li>
-        <li>Observe real jobseeker case handling</li>
+        <li><label><input type="checkbox"><span>Complete Lessonly: Tone & Messaging</span></label></li>
+        <li><label><input type="checkbox"><span>Practice rewriting poor examples</span></label></li>
       </ul>
     </details>
     <details>
-      <summary>Day 3: Troubleshooting Deep Dive</summary>
+      <summary>Day 3: QA Practice Round</summary>
       <ul>
-        <li>Instructor-led session: Common Troubleshooting Patterns</li>
-        <li>Practice 5 troubleshooting simulations</li>
+        <li><label><input type="checkbox"><span>Score 2 real cases using QA rubric</span></label></li>
+        <li><label><input type="checkbox"><span>Submit for review and trainer feedback</span></label></li>
       </ul>
     </details>
     <details>
-      <summary>Day 4: Independent Queue Time + QA Review</summary>
+      <summary>Day 4: Live Case Shadowing</summary>
       <ul>
-        <li>Handle test cases solo (~3 hours)</li>
-        <li>QA partner debrief</li>
+        <li><label><input type="checkbox"><span>Shadow teammate live for 1hr</span></label></li>
+        <li><label><input type="checkbox"><span>Debrief with coach afterward</span></label></li>
       </ul>
     </details>
     <details>
-      <summary>Day 5: Feedback & Readiness Check</summary>
+      <summary>Day 5: End-of-Week Challenge</summary>
       <ul>
-        <li>Run readiness self-assessment</li>
-        <li>One-on-one with TL to review progress</li>
+        <li><label><input type="checkbox"><span>Complete 3 live cases independently</span></label></li>
+        <li><label><input type="checkbox"><span>Submit a self-reflection log</span></label></li>
       </ul>
     </details>
-    
   </div>
-
   <div class="week">
-    <h2>Week 4: Ramp-Up Phase</h2>
+    <h2>Week 4: Ramp-Up & Feedback</h2>
     <details>
-      <summary>Day 1: Start Live Case Handling (Supervised)</summary>
+      <summary>Day 1: Queue Takeover</summary>
       <ul>
-        <li>Begin handling live jobseeker tickets (~3 hours)</li>
-        <li>Daily QA check-ins</li>
+        <li><label><input type="checkbox"><span>10-case daily target (real tickets)</span></label></li>
+        <li><label><input type="checkbox"><span>Daily huddle + blockers sync</span></label></li>
       </ul>
     </details>
     <details>
-      <summary>Day 2: Escalation Decision-Making</summary>
+      <summary>Day 2: Peer Review</summary>
       <ul>
-        <li>Instructor session: escalation vs. solve</li>
-        <li>Work through 5 triage decision scenarios</li>
+        <li><label><input type="checkbox"><span>Review 3 peer tickets + tag errors</span></label></li>
+        <li><label><input type="checkbox"><span>Submit notes in QA review template</span></label></li>
       </ul>
     </details>
     <details>
-      <summary>Day 3: Queue Management Tools</summary>
+      <summary>Day 3: Shadow -> Solo</summary>
       <ul>
-        <li>Tool practice: assigning, tagging, tracking cases</li>
-        <li>Review KPIs: first response time, resolution time</li>
+        <li><label><input type="checkbox"><span>Shadow 2 teammate cases</span></label></li>
+        <li><label><input type="checkbox"><span>Complete 3 solo cases (similar type)</span></label></li>
       </ul>
     </details>
     <details>
-      <summary>Day 4: Midweek Performance Review</summary>
+      <summary>Day 4: Guru & Process Cleanup</summary>
       <ul>
-        <li>Check-in with TL on performance trends</li>
-        <li>Self-review of 3 handled cases</li>
+        <li><label><input type="checkbox"><span>Review outdated Guru cards (note gaps)</span></label></li>
+        <li><label><input type="checkbox"><span>Submit 1 feedback ticket for process</span></label></li>
       </ul>
     </details>
     <details>
-      <summary>Day 5: Full Day in Queue (Supervised)</summary>
+      <summary>Day 5: Quiz + Coaching</summary>
       <ul>
-        <li>Target: 5–6 hours of queue time</li>
-        <li>Optional peer feedback form</li>
+        <li><label><input type="checkbox"><span>Take mid-training assessment</span></label></li>
+        <li><label><input type="checkbox"><span>Review answers in 1:1 with TL</span></label></li>
       </ul>
     </details>
-    
   </div>
-
   <div class="week">
-    <h2>Week 5: Increased Autonomy</h2>
+    <h2>Week 5: Independence & Confidence</h2>
     <details>
-      <summary>Day 1: Expanded Queue Work</summary>
+      <summary>Day 1: Tagging Accuracy</summary>
       <ul>
-        <li>Handle broader case types independently</li>
-        <li>Daily QA check-ins</li>
+        <li><label><input type="checkbox"><span>Tag 10 cases with 95% accuracy</span></label></li>
+        <li><label><input type="checkbox"><span>QA spot-check on tag consistency</span></label></li>
       </ul>
     </details>
     <details>
-      <summary>Day 2: Advanced Troubleshooting</summary>
+      <summary>Day 2: Queue Flow Improvements</summary>
       <ul>
-        <li>Instructor-led session on uncommon case types</li>
-        <li>Shadow and replicate resolution patterns</li>
+        <li><label><input type="checkbox"><span>Draft 2 suggestions for case efficiency</span></label></li>
+        <li><label><input type="checkbox"><span>Discuss with TL in daily sync</span></label></li>
       </ul>
     </details>
     <details>
-      <summary>Day 3: Productivity vs. Quality</summary>
+      <summary>Day 3: Bug Reporting Practice</summary>
       <ul>
-        <li>Data review of speed vs. accuracy metrics</li>
-        <li>Practice with QA scoring rubrics</li>
+        <li><label><input type="checkbox"><span>Submit 2 mock bug tickets</span></label></li>
+        <li><label><input type="checkbox"><span>Review with peer + QA format</span></label></li>
       </ul>
     </details>
     <details>
-      <summary>Day 4: Case Ownership & Documentation</summary>
+      <summary>Day 4: Communication Style Feedback</summary>
       <ul>
-        <li>Deep dive: effective internal notes</li>
-        <li>Practice updating escalation trackers</li>
+        <li><label><input type="checkbox"><span>Live coaching: clarity vs. tone</span></label></li>
+        <li><label><input type="checkbox"><span>Rewrite 2 unclear cases from peers</span></label></li>
       </ul>
     </details>
     <details>
-      <summary>Day 5: Mid-Ramp Feedback</summary>
+      <summary>Day 5: TL Check-In</summary>
       <ul>
-        <li>TL-led case review</li>
-        <li>Identify growth areas for final week</li>
+        <li><label><input type="checkbox"><span>Prepare final week goals</span></label></li>
+        <li><label><input type="checkbox"><span>Share self-reflection with TL</span></label></li>
       </ul>
     </details>
-    
   </div>
-
   <div class="week">
-    <h2>Week 6: Full Production</h2>
+    <h2>Week 6: Graduation & Handoff</h2>
     <details>
-      <summary>Day 1: Independent Queue Day</summary>
+      <summary>Day 1: Full Production Start</summary>
       <ul>
-        <li>Target: 6–7 hours live handling</li>
-        <li>Log end-of-day reflections</li>
+        <li><label><input type="checkbox"><span>Work full shift in assigned queue</span></label></li>
+        <li><label><input type="checkbox"><span>Slack questions allowed, no shadow</span></label></li>
       </ul>
     </details>
     <details>
-      <summary>Day 2: Deep QA Calibration</summary>
+      <summary>Day 2: QA & CSAT Review</summary>
       <ul>
-        <li>Compare QA scores with peers</li>
-        <li>Refine approach to case tone and user trust</li>
+        <li><label><input type="checkbox"><span>Review QA trends from Week 5</span></label></li>
+        <li><label><input type="checkbox"><span>Review CSAT comments (if applicable)</span></label></li>
       </ul>
     </details>
     <details>
-      <summary>Day 3: Independent Queue Day</summary>
+      <summary>Day 3: Cross-Queue Support</summary>
       <ul>
-        <li>Focus on accuracy and documentation</li>
-        <li>Start readiness checklist</li>
+        <li><label><input type="checkbox"><span>Optional rotation: Employer tagging shift</span></label></li>
+        <li><label><input type="checkbox"><span>Note differences and similarities</span></label></li>
       </ul>
     </details>
     <details>
-      <summary>Day 4: Final Queue Push</summary>
+      <summary>Day 4: Self-Reflection & Quiz</summary>
       <ul>
-        <li>Target 8 hours of consistent support</li>
-        <li>QA 2 peer cases for cross-feedback</li>
+        <li><label><input type="checkbox"><span>Take final knowledge check</span></label></li>
+        <li><label><input type="checkbox"><span>Submit training reflection doc</span></label></li>
       </ul>
     </details>
     <details>
-      <summary>Day 5: Graduation Day</summary>
+      <summary>Day 5: Graduation</summary>
       <ul>
-        <li>TL-led 1:1 debrief + certification</li>
-        <li>Wrap-up survey + team welcome</li>
+        <li><label><input type="checkbox"><span>1:1 TL meeting + feedback</span></label></li>
+        <li><label><input type="checkbox"><span>Welcome to the full production floor!</span></label></li>
       </ul>
     </details>
-    
   </div>
-
-  <!-- End Weeks 4–6 -->
 
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       const tabs = document.querySelectorAll('.tab-btn');
       const weeks = document.querySelectorAll('.week');
 
-      if (tabs.length === 0 || weeks.length === 0) return;
-
       tabs.forEach(tab => {
         tab.addEventListener('click', function() {
           const index = parseInt(this.getAttribute('data-index'));
-
           tabs.forEach(btn => btn.classList.remove('active'));
           this.classList.add('active');
-
           weeks.forEach(week => week.classList.remove('active'));
-          if (weeks[index]) {
-            weeks[index].classList.add('active');
-          }
+          weeks[index].classList.add('active');
         });
       });
     });
