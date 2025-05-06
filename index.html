@@ -1,37 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Customer Support Training</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <title>Customer Support Training Hub</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
       margin: 0;
       padding: 0;
-      text-align: center;
+      background-color: #f4f4f4;
     }
     header {
-      background: #2b7a78;
+      background-color: #0CAA41; /* Glassdoor Green */
       color: white;
+      text-align: center;
       padding: 3rem 1rem;
     }
-    a {
-      display: inline-block;
-      margin: 1rem;
-      padding: 1rem 2rem;
+    header h1 {
+      margin: 0 0 10px;
+      font-size: 2.2rem;
+    }
+    header p {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+    .container {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+    .button-group a {
+      background-color: #0CAA41; /* Glassdoor Green */
+      color: white;
       text-decoration: none;
+      padding: 1rem 2rem;
       border-radius: 5px;
       font-weight: bold;
+      transition: background-color 0.3s;
     }
-    .employer {
-      background-color: #2b7a78;
-      color: white;
+    .button-group a:hover {
+      background-color: #089233;
     }
-    .jobseeker {
-      background-color: #3aafa9;
-      color: white;
+    .footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 3rem;
+      padding-bottom: 2rem;
     }
   </style>
 </head>
@@ -39,8 +62,11 @@
   <header>
     <h1>Customer Support Training Hub</h1>
     <p>Select a training path:</p>
-    <a href="employer.html" class="employer" target="_blank">Employer Training</a>
-    <a href="jobseeker.html" class="jobseeker" target="_blank">Jobseeker Training</a>
   </header>
-</body>
-</html>
+  <div class="container">
+    <div class="button-group">
+      <a href="jobseeker.html" target="_blank">Jobseeker Training</a>
+      <a href="employer-training.html" target="_blank">Employer/Profile Changes</a>
+    </div>
+    <div class="footer">
+      <p>This hub provides interactive onboarding tools for offshore support
