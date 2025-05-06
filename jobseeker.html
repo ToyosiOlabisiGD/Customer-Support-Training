@@ -3,61 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="icon" type="image/png" href="favicon.png">
   <title>Jobseeker Support Training</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
       margin: 0;
-      padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
     }
     header {
       background-color: #0CAA41;
       color: white;
+      padding: 20px;
       text-align: center;
-      padding: 2.5rem 1rem;
-    }
-    header h1 {
-      margin: 0 0 10px;
-      font-size: 2.2rem;
-    }
-    header p {
-      margin: 0;
-      font-size: 1.2rem;
     }
     .week {
-      margin: 2rem auto;
-      padding: 1rem;
-      max-width: 900px;
+      margin: 20px;
+      border: 1px solid #ccc;
       background-color: white;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     .week h2 {
-      text-align: center;
-      color: #0CAA41;
+      margin: 0;
+      padding: 15px;
+      background-color: #e6f4ec;
+      border-radius: 8px 8px 0 0;
     }
     details {
-      margin: 1rem 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      padding: 1rem;
+      border-top: 1px solid #eee;
+      padding: 10px 20px;
     }
     summary {
       font-weight: bold;
-      font-size: 1.1rem;
       cursor: pointer;
+      margin-bottom: 10px;
     }
     ul {
       list-style: none;
-      padding-left: 1rem;
+      padding-left: 0;
     }
     li {
-      margin: 0.5rem 0;
+      padding: 4px 0;
+      display: flex;
+      align-items: center;
     }
     input[type="checkbox"] {
-      margin-right: 0.5rem;
+      margin-right: 10px;
+      accent-color: #0CAA41;
     }
     a {
       color: #0CAA41;
@@ -66,117 +59,82 @@
     a:hover {
       text-decoration: underline;
     }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      padding: 20px;
+      color: #777;
+    }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Jobseeker Support Training</h1>
-    <p>Interactive 6-week onboarding guide with linked modules</p>
+    <p>Glassdoor Trust & Safety Offshore Onboarding – 6 Week Program</p>
+    <p><em>Last updated: May 6, 2025</em></p>
   </header>
 
-  <!-- Week 1 -->
   <div class="week">
-    <h2>Week 1: Foundations & Compliance</h2>
-    <details>
-      <summary>Day 1: Welcome & Tool Setup</summary>
+    <h2>Week 1</h2>
+    <details open>
+      <summary>Day 1</summary>
       <ul>
-        <li><input type="checkbox"><a href="https://glassdoor.okta.com/" target="_blank">Okta Setup</a></li>
-        <li><input type="checkbox"><a href="https://glassdoor.lessonly.com/lessons/tool-introduction" target="_blank">Tools Intro (Lessonly)</a></li>
-        <li><input type="checkbox"><a href="https://app.getguru.com/card/iL0BcXEy/Support-Tool-Access-Setup" target="_blank">Guru: Tool Access Setup</a></li>
+        <li><input type="checkbox"> Recap – Intro & expectations</li>
+        <li><input type="checkbox"> Intro to Jobseeker Training Path</li>
+        <li><input type="checkbox"> Help Center overview: Profile Setup</li>
+        <li><input type="checkbox"> <a href="#" target="_blank">Help Center: Create an Account</a></li>
+        <li><input type="checkbox"> Role Play – Create profile + resume</li>
+        <li><input type="checkbox"> Set job alerts, customize notifications</li>
+        <li><input type="checkbox"> Test email workflows</li>
       </ul>
     </details>
     <details>
-      <summary>Day 2: Salesforce Basics & Guru Overview</summary>
+      <summary>Day 2</summary>
       <ul>
-        <li><input type="checkbox"><a href="https://glassdoor.lessonly.com/learn" target="_blank">Salesforce Navigation (Lessonly)</a></li>
-        <li><input type="checkbox"><a href="https://app.getguru.com/dashboard" target="_blank">Guru Dashboard Overview</a></li>
+        <li><input type="checkbox"> Recap</li>
+        <li><input type="checkbox"> <a href="#">Lessonly: Account Maintenance Model</a></li>
+        <li><input type="checkbox"> Guru: Account Maintenance</li>
+        <li><input type="checkbox"> Help Center: Account Settings & Security</li>
+        <li><input type="checkbox"> Password reset, 2FA, login issues</li>
       </ul>
     </details>
     <details>
-      <summary>Day 3: Case Types & Templates</summary>
+      <summary>Day 3</summary>
       <ul>
-        <li><input type="checkbox"><a href="https://glassdoor.lessonly.com/lessons/email-templates-jobseeker" target="_blank">Email Templates Overview (Lessonly)</a></li>
-        <li><input type="checkbox"><a href="https://app.getguru.com/card/abc123/Job-Seeker-Case-Types" target="_blank">Case Types (Guru)</a></li>
+        <li><input type="checkbox"> Recap</li>
+        <li><input type="checkbox"> T1 Overview – Community Support</li>
+        <li><input type="checkbox"> Sensitive Case Types – Jobseeker</li>
+        <li><input type="checkbox"> Practice Cases: Sensitive (5)</li>
+        <li><input type="checkbox"> Explore <a href="https://www.fishbowlapp.com/" target="_blank">Fishbowl</a></li>
+        <li><input type="checkbox"> Help Center: Community on Glassdoor</li>
       </ul>
     </details>
     <details>
-      <summary>Day 4: Compliance & Legal</summary>
+      <summary>Day 4</summary>
       <ul>
-        <li><input type="checkbox"><a href="https://glassdoor.lessonly.com/lessons/2403024-support-sensitive-case-types-general" target="_blank">Sensitive Case Types (Lessonly)</a></li>
-        <li><input type="checkbox"><a href="https://app.getguru.com/card/fgh456/Legal-Escalation-Process" target="_blank">Legal Escalation (Guru)</a></li>
+        <li><input type="checkbox"> Practice Cases: Account Maintenance (7)</li>
+        <li><input type="checkbox"> Live Queue: Shadowing</li>
       </ul>
     </details>
     <details>
-      <summary>Day 5: Shadowing & Reflection</summary>
+      <summary>Day 5</summary>
       <ul>
-        <li><input type="checkbox"><a href="https://docs.google.com/document/d/1-shadow-template" target="_blank">Shadowing 1:1 Template</a></li>
-        <li><input type="checkbox"> Daily Recap & Notes</li>
+        <li><input type="checkbox"> Practice Cases: Community Email Support (11)</li>
+        <li><input type="checkbox"> <a href="#">Lessonly: Product Support</a></li>
+        <li><input type="checkbox"> <a href="#">Community Calibration Activity</a></li>
+        <li><input type="checkbox"> Help Center: Salary Info, Company FAQs</li>
+        <li><input type="checkbox"> Guru: Jobs Module</li>
+        <li><input type="checkbox"> Live Queue: Shadowing</li>
       </ul>
     </details>
   </div>
 
-  <!-- Week 2 -->
-  <div class="week">
-    <h2>Week 2: Core Workflows – Part 1</h2>
-    <details>
-      <summary>Day 1: Help Center Review</summary>
-      <ul>
-        <li><input type="checkbox"><a href="https://help.glassdoor.com/s/topic/0TO36000000CZ9SGAW/job-seekers" target="_blank">Jobseeker Help Center</a></li>
-        <li><input type="checkbox"> Explore Profile Creation, Email Alerts</li>
-      </ul>
-    </details>
-    <details>
-      <summary>Day 2: Community Support & Roleplay</summary>
-      <ul>
-        <li><input type="checkbox"><a href="https://glassdoor.lessonly.com/lessons/community-support-t1" target="_blank">Community Support T1 (Lessonly)</a></li>
-        <li><input type="checkbox"><a href="https://www.fishbowlapp.com/" target="_blank">Fishbowl Overview</a></li>
-      </ul>
-    </details>
-    <details>
-      <summary>Day 3: Account Maintenance</summary>
-      <ul>
-        <li><input type="checkbox"><a href="https://app.getguru.com/card/jobseeker-account-maintenance" target="_blank">Account Maintenance (Guru)</a></li>
-        <li><input type="checkbox"> Password resets, email change requests</li>
-      </ul>
-    </details>
-    <details>
-      <summary>Day 4: Practice Cases</summary>
-      <ul>
-        <li><input type="checkbox"> Work 5 practice cases from assigned queue</li>
-        <li><input type="checkbox"> TL feedback session</li>
-      </ul>
-    </details>
-    <details>
-      <summary>Day 5: Live Queue Shadowing</summary>
-      <ul>
-        <li><input type="checkbox"> Shadow Tier 1 agent in Salesforce</li>
-        <li><input type="checkbox"> Notes and follow-up questions</li>
-      </ul>
-    </details>
-  </div>
+  <!-- Repeat for Week 2 through Week 6 below -->
 
-  <!-- Weeks 3–6 (shortened for brevity here, but would follow same format) -->
-  <div class="week">
-    <h2>Week 3: Core Workflows – Part 2</h2>
-    <details><summary>Day 1</summary><ul><li><input type="checkbox"> Job Alerts Module</li></ul></details>
-    <details><summary>Day 2</summary><ul><li><input type="checkbox"> Community Case Practice</li></ul></details>
-    <details><summary>Day 3</summary><ul><li><input type="checkbox"> Guru Review & Shadowing</li></ul></details>
-    <details><summary>Day 4</summary><ul><li><input type="checkbox"> QA Practice</li></ul></details>
-    <details><summary>Day 5</summary><ul><li><input type="checkbox"> End-of-Week Summary</li></ul></details>
-  </div>
+  <!-- Use the same <div class="week"> structure, each with 5 <details> elements (Day 1–5) -->
 
-  <div class="week">
-    <h2>Week 4: Feedback, Site Bugs & Shadow</h2>
-    <details><summary>Day 1–5</summary><ul><li><input type="checkbox"> Shadow agent for site bugs, case feedback, escalation</li></ul></details>
-  </div>
-
-  <div class="week">
-    <h2>Week 5: Deep Dives + Final Practice</h2>
-    <details><summary>Day 1–3</summary><ul><li><input type="checkbox"> Advanced Guru & Legal Topics</li></ul></details>
-  </div>
-
-  <div class="week">
-    <h2>Week 6: Readiness</h2>
-    <details><summary>Day 1–3</summary><ul>\n<li><input type=\"checkbox\"> Live queue with TL</li>\n<li><input type=\"checkbox\"> Self-led casework</li>\n<li><input type=\"checkbox\"> Exit interview + feedback form</li>\n</ul></details>\n</div>\n\n</body>\n</html>\n```\n\n---\n\nYou're now ready to paste this into your `jobseeker.html` file on GitHub.\n\nWould you like me to generate the **Employer/Profile Changes** page next using the same format and style?"
-````
+  <footer>
+    &copy; 2025 Glassdoor Trust & Safety | Offshore Training Program
+  </footer>
+</body>
+</html>
