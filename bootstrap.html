@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customer Support Training</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+    <div class="container-fluid">
+      <span class="navbar-brand">Customer Support Training</span>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!-- Section: Training Overview -->
+    <div class="card mb-4">
+      <div class="card-header bg-primary text-white">
+        Week 1: Training Overview
+      </div>
+      <div class="card-body">
+        <p>Welcome to the condensed 6–8 week onboarding program. This module will walk you through how your training is structured, what success looks like, and your support resources.</p>
+        
+        <ul>
+          <li>Training roadmap explained</li>
+          <li>Ramp-up and graduation criteria</li>
+          <li>Key communication channels</li>
+        </ul>
+
+        <button class="btn btn-outline-primary mt-3" data-bs-toggle="collapse" data-bs-target="#overviewQuiz">
+          Take Quiz
+        </button>
+
+        <div class="collapse mt-3" id="overviewQuiz">
+          <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true"
+                  width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">
+            Loading…
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section: Core Training -->
+    <div class="card mb-4">
+      <div class="card-header bg-success text-white">
+        Week 1: Core Training
+      </div>
+      <div class="card-body">
+        <p>This foundational module introduces core tools, tone, tagging, and case flow.</p>
+
+        <div class="accordion" id="coreAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="coreOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#coreCollapseOne" aria-expanded="true">
+                Tools Overview
+              </button>
+            </h2>
+            <div id="coreCollapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                - Salesforce  
+                - Omni login and shortcuts  
+                - Help Center navigation  
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="coreTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coreCollapseTwo">
+                Tone and Tagging Basics
+              </button>
+            </h2>
+            <div id="coreCollapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                - When to use empathy macros  
+                - How to tag JS vs Employer vs Moderation  
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-outline-success mt-3" data-bs-toggle="collapse" data-bs-target="#coreQuiz">
+          Take Core Quiz
+        </button>
+
+        <div class="collapse mt-3" id="coreQuiz">
+          <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true"
+                  width="100%" height="800" frameborder="0">
+            Loading…
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more cards here for: Jobseeker Moderation, Employer Moderation, etc. -->
+
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
